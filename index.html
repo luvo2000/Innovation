@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Germany — Where Innovation Becomes Industry</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════
+     NAVBAR
+════════════════════════════════════════════════ -->
+<header class="navbar" id="navbar">
+  <div class="navbar__inner">
+    <a href="#home" class="navbar__logo">
+      <img src="images/Adler_modern.png" class="logo-bundesadler" alt="Bundesadler" />
+      <span class="logo-text">GERMANY<span class="logo-sub">Where Innovation Becomes Industry</span></span>
+    </a>
+
+    <nav class="navbar__links" id="navLinks">
+      <a href="#home"       class="nav-link active">Home</a>
+      <a href="#mission"    class="nav-link">Mission</a>
+      <a href="#innovation" class="nav-link">Innovations</a>
+      <a href="#campaign"   class="nav-link">Campaign</a>
+      <a href="#newsletter" class="nav-link">Newsletter</a>
+      <a href="#contact"    class="nav-link">Contact</a>
+    </nav>
+
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <!-- German flag stripe -->
+  <div class="flag-stripe">
+    <div class="stripe black"></div>
+    <div class="stripe red"></div>
+    <div class="stripe gold"></div>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════════════
+     HERO
+════════════════════════════════════════════════ -->
+<section class="hero" id="home">
+  <!-- Real German flag photo background -->
+  <div class="hero__flag-bg" aria-hidden="true">
+    <img src="images/download.jpg" class="hero__flag-photo" alt="" />
+    <div class="hfb-grid"></div>
+  </div>
+  <div class="hero__bg-text">GERMANY</div>
+
+  <div class="hero__content">
+    <div class="hero__eyebrow">
+      <span class="flag-dot black-dot"></span>
+      <span class="flag-dot red-dot"></span>
+      <span class="flag-dot gold-dot"></span>
+      <span>Nation Branding · FDI · Deep Tech</span>
+    </div>
+    <h1 class="hero__title">
+      Where Innovation<br/>
+      <em>Becomes Industry</em>
+    </h1>
+    <p class="hero__subtitle">
+      Germany leads the world in precision engineering, frontier AI, and clean-energy technology.
+      We tell that story to the investors, partners, and talent who need to hear it.
+    </p>
+    <div class="hero__stats">
+      <div class="stat-card">
+        <span class="stat-num">€1.54T</span>
+        <span class="stat-label">Goods exported annually (2024)</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num">€1,034B</span>
+        <span class="stat-label">Inward FDI stock</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num">Top 3</span>
+        <span class="stat-label">Global exporter rank</span>
+      </div>
+    </div>
+    <div class="hero__cta">
+      <a href="#innovation" class="btn btn--gold">Explore Innovations</a>
+      <a href="#newsletter" class="btn btn--outline">Subscribe Free</a>
+    </div>
+  </div>
+
+  <div class="hero__eagle">
+    <img src="images/Bundesadler_Siegel.svg.png" alt="Bundesadler — Germany" class="eagle-img" />
+    <svg viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg" class="eagle-svg" aria-label="Bundesadler" style="display:none">
+      <g>
+        <!-- Body -->
+        <ellipse cx="100" cy="130" rx="26" ry="38" fill="currentColor"/>
+        <!-- Head -->
+        <circle cx="100" cy="75" r="22" fill="currentColor"/>
+        <!-- Beak right -->
+        <polygon points="100,62 128,74 100,86" fill="currentColor"/>
+        <!-- Eye -->
+        <circle cx="112" cy="69" r="5" fill="#0a0a0a"/>
+        <!-- Crown 3 peaks -->
+        <polygon points="83,53 87,40 91,53" fill="currentColor"/>
+        <polygon points="95,50 100,36 105,50" fill="currentColor"/>
+        <polygon points="109,53 113,40 117,53" fill="currentColor"/>
+        <!-- Left wing -->
+        <path d="M74,110 C60,92 20,82 5,55 C22,68 38,80 54,96 C38,74 30,46 36,20 C48,46 52,76 62,100 C54,66 58,32 72,16 C76,50 70,84 72,108 Z" fill="currentColor"/>
+        <!-- Right wing -->
+        <path d="M126,110 C140,92 180,82 195,55 C178,68 162,80 146,96 C162,74 170,46 164,20 C152,46 148,76 138,100 C146,66 142,32 128,16 C124,50 130,84 128,108 Z" fill="currentColor"/>
+        <!-- Tail fan -->
+        <path d="M78,165 C72,182 60,196 50,210 C66,196 82,186 100,180 C118,186 134,196 150,210 C140,196 128,182 122,165 Z" fill="currentColor"/>
+        <!-- Left talons -->
+        <line x1="80" y1="166" x2="62" y2="185" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+        <line x1="80" y1="166" x2="70" y2="188" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+        <line x1="80" y1="166" x2="78" y2="190" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+        <!-- Right talons -->
+        <line x1="120" y1="166" x2="138" y2="185" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+        <line x1="120" y1="166" x2="130" y2="188" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+        <line x1="120" y1="166" x2="122" y2="190" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+        <!-- Breast shield (red) -->
+        <rect x="88" y="118" width="24" height="30" rx="3" fill="#CC0000"/>
+        <line x1="100" y1="118" x2="100" y2="148" stroke="#D4A017" stroke-width="2.5"/>
+      </g>
+    </svg>
+  </div>
+
+  <div class="hero__scroll">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     MISSION — NATION BRANDING
+════════════════════════════════════════════════ -->
+<section class="section mission" id="mission">
+  <div class="section__inner">
+    <div class="section__label">
+      <div class="label-line"></div>
+      The Strategic Case
+    </div>
+    <h2 class="section__title">The Visibility Gap</h2>
+    <p class="section__lead">
+      Germany consistently ranks among the world's top three merchandise exporters.
+      Yet its deep-tech innovation ecosystem remains systematically under-communicated
+      in international markets. We exist to close that gap.
+    </p>
+
+    <div class="mission__grid">
+      <div class="mission__card">
+        <div class="card-icon gold-icon">⚙️</div>
+        <h3>Industrial Heritage</h3>
+        <p>Centuries of engineering precision — from Gutenberg's press to today's Industry 4.0 — give Germany an unmatched manufacturing DNA that its startups inherit by default.</p>
+      </div>
+      <div class="mission__card">
+        <div class="card-icon red-icon">🔬</div>
+        <h3>Research Depth</h3>
+        <p>The Max Planck Society, Fraunhofer Institutes, and Germany's 400+ universities produce more engineering PhDs per capita than any comparable economy. This is where frontier tech begins.</p>
+      </div>
+      <div class="mission__card">
+        <div class="card-icon black-icon">🌍</div>
+        <h3>Global Reach</h3>
+        <p>A €60M nation branding campaign deployed across LinkedIn, CNN International, Bloomberg TV, Airport DOOH, and global trade fairs — targeting investors, partners, and talent across 140+ markets.</p>
+      </div>
+      <div class="mission__card">
+        <div class="card-icon gold-icon">📈</div>
+        <h3>Measurable Impact</h3>
+        <p>Benchmarked against the UK GREAT campaign (ROI: £1:£10.6), our target is ≥20% FDI growth within three years — bringing annual inflows to ≥€52 billion.</p>
+      </div>
+    </div>
+
+    <!-- Positioning statement -->
+    <div class="positioning">
+      <div class="positioning__quote">
+        "The most trusted platform for industrial innovation and transformation."
+      </div>
+      <div class="positioning__label">Germany's Campaign Positioning</div>
+    </div>
+
+    <!-- Media Plan -->
+    <div class="media-plan">
+      <div class="media-plan__header">
+        <div class="media-plan__title-block">
+          <span class="media-plan__label">Nation Branding Campaign</span>
+          <h3 class="media-plan__title">€60M Annual Media Plan</h3>
+          <p class="media-plan__intro">
+            The campaign reaches three distinct audiences — investors, trade partners, and global talent —
+            through seven channel categories, each selected for its fit with a specific communication objective.
+            Channel mix and cost benchmarks are drawn from verified 2024–2025 market data.
+          </p>
+        </div>
+        <div class="media-plan__total-box">
+          <span class="mt-num">2B+</span>
+          <span class="mt-label">Annual impressions</span>
+        </div>
+      </div>
+
+      <div class="media-grid">
+        <div class="media-item" data-audience="Investors · B2B">
+          <div class="mi-left">
+            <div class="mi-color" style="background:#D4A017"></div>
+            <div class="mi-meta">
+              <span class="mi-channel">LinkedIn</span>
+              <span class="mi-why">C-suite targeting precision · long-form professional content</span>
+            </div>
+          </div>
+          <div class="mi-right">
+            <div class="mi-bar-wrap">
+              <div class="mi-bar" style="--w:100%; background:#D4A017"></div>
+            </div>
+            <div class="mi-figures">
+              <span class="mi-budget">€12M</span>
+              <span class="mi-share">20%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="media-item" data-audience="Investors">
+          <div class="mi-left">
+            <div class="mi-color" style="background:#CC0000"></div>
+            <div class="mi-meta">
+              <span class="mi-channel">Premium TV <span class="mi-sub">CNN · Bloomberg · BBC</span></span>
+              <span class="mi-why">Institutional credibility signals unreplicable by digital alone</span>
+            </div>
+          </div>
+          <div class="mi-right">
+            <div class="mi-bar-wrap">
+              <div class="mi-bar" style="--w:83%; background:#CC0000"></div>
+            </div>
+            <div class="mi-figures">
+              <span class="mi-budget">€10M</span>
+              <span class="mi-share">17%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="media-item" data-audience="Investors · B2B">
+          <div class="mi-left">
+            <div class="mi-color" style="background:#003366"></div>
+            <div class="mi-meta">
+              <span class="mi-channel">Trade Fairs <span class="mi-sub">Hannover Messe · CES</span></span>
+              <span class="mi-why">Highest-conversion channel for B2B relationship formation</span>
+            </div>
+          </div>
+          <div class="mi-right">
+            <div class="mi-bar-wrap">
+              <div class="mi-bar" style="--w:75%; background:#003366"></div>
+            </div>
+            <div class="mi-figures">
+              <span class="mi-budget">€9M</span>
+              <span class="mi-share">15%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="media-item" data-audience="Investors · B2B">
+          <div class="mi-left">
+            <div class="mi-color" style="background:#8a6500"></div>
+            <div class="mi-meta">
+              <span class="mi-channel">Airport DOOH <span class="mi-sub">7 Global Hubs</span></span>
+              <span class="mi-why">Reaches mobile decision-makers at the moment of global travel</span>
+            </div>
+          </div>
+          <div class="mi-right">
+            <div class="mi-bar-wrap">
+              <div class="mi-bar" style="--w:67%; background:#8a6500"></div>
+            </div>
+            <div class="mi-figures">
+              <span class="mi-budget">€8M</span>
+              <span class="mi-share">13%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="media-item" data-audience="All Groups">
+          <div class="mi-left">
+            <div class="mi-color" style="background:#CC0000"></div>
+            <div class="mi-meta">
+              <span class="mi-channel">YouTube</span>
+              <span class="mi-why">Broad reach across investor, B2B and talent audiences</span>
+            </div>
+          </div>
+          <div class="mi-right">
+            <div class="mi-bar-wrap">
+              <div class="mi-bar" style="--w:58%; background:#CC0000"></div>
+            </div>
+            <div class="mi-figures">
+              <span class="mi-budget">€7M</span>
+              <span class="mi-share">12%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="media-item" data-audience="Talent">
+          <div class="mi-left">
+            <div class="mi-color" style="background:#D4A017"></div>
+            <div class="mi-meta">
+              <span class="mi-channel">Instagram &amp; TikTok</span>
+              <span class="mi-why">Talent acquisition — Germany's culture visible to next-gen engineers</span>
+            </div>
+          </div>
+          <div class="mi-right">
+            <div class="mi-bar-wrap">
+              <div class="mi-bar" style="--w:42%; background:#D4A017"></div>
+            </div>
+            <div class="mi-figures">
+              <span class="mi-budget">€5M</span>
+              <span class="mi-share">8%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="media-item" data-audience="All Groups">
+          <div class="mi-left">
+            <div class="mi-color" style="background:#003366"></div>
+            <div class="mi-meta">
+              <span class="mi-channel">Programmatic Display</span>
+              <span class="mi-why">Precision retargeting across all audiences at scale</span>
+            </div>
+          </div>
+          <div class="mi-right">
+            <div class="mi-bar-wrap">
+              <div class="mi-bar" style="--w:33%; background:#003366"></div>
+            </div>
+            <div class="mi-figures">
+              <span class="mi-budget">€4M</span>
+              <span class="mi-share">7%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="media-plan__footer">
+        <div class="mpf-item">
+          <span class="mpf-label">Benchmark</span>
+          <span class="mpf-val">UK GREAT Campaign · ROI £1 : £10.6</span>
+        </div>
+        <div class="mpf-item">
+          <span class="mpf-label">Target ROI</span>
+          <span class="mpf-val">≥ €1 : €10</span>
+        </div>
+        <div class="mpf-item">
+          <span class="mpf-label">Source</span>
+          <span class="mpf-val">The B2B House · Adwave · Plug Talk Media (2025–26)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     INNOVATION SPOTLIGHTS
+════════════════════════════════════════════════ -->
+<section class="section innovations" id="innovation">
+  <div class="section__inner">
+    <div class="section__label">
+      <div class="label-line"></div>
+      Innovation Spotlights
+    </div>
+    <h2 class="section__title">Germany's Deep-Tech Frontier</h2>
+    <p class="section__lead">
+      Five proof points that Germany's innovation pipeline is deeper — and more investable — than the world realises.
+    </p>
+
+    <!-- Tabs -->
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="energy">⚡ Energy</button>
+      <button class="tab-btn" data-tab="ai">🧠 Artificial Intelligence</button>
+      <button class="tab-btn" data-tab="semicon">💡 Semiconductors</button>
+      <button class="tab-btn" data-tab="biotech">🧬 Biomedical</button>
+      <button class="tab-btn" data-tab="quantum">⚛️ Quantum</button>
+    </div>
+
+    <!-- TAB: Energy -->
+    <div class="tab-content active" id="tab-energy">
+      <div class="spotlight-hero">
+        <div class="spotlight-badge">March 2026 Issue</div>
+        <h3>Drilling Into the Future: Germany's Geothermal Revolution</h3>
+        <p class="spotlight-lead">
+          Geothermal energy is CO₂-free, always-on, and land-efficient. The barrier has always been cost.
+          Two German startups are about to change that.
+        </p>
+      </div>
+
+      <div class="company-cards">
+        <div class="company-card featured">
+          <div class="company-card__header">
+            <div class="company-icon" style="background:#1a1a2e">⛏️</div>
+            <div>
+              <h4>Hades Mining</h4>
+              <span class="company-city">Munich, Germany</span>
+            </div>
+            <div class="company-badge">€15M Seed</div>
+          </div>
+          <p>Developing high-powered <strong>laser drilling systems</strong> that keep sensitive technology above ground — transmitting energy downward through optical systems. Contactless drilling dramatically reduces costs and enables sites previously considered unviable.</p>
+          <div class="company-milestones">
+            <div class="milestone"><span class="m-year">2028</span><span class="m-text">1 km depth target</span></div>
+            <div class="milestone"><span class="m-year">2029</span><span class="m-text">First commercial use</span></div>
+          </div>
+          <blockquote class="company-quote">
+            "Drilling costs make up 30–70% of total capex. We are fixing that."
+            <cite>— Max Werner, CEO</cite>
+          </blockquote>
+        </div>
+
+        <div class="company-card">
+          <div class="company-card__header">
+            <div class="company-icon" style="background:#1a2e1a">⚡</div>
+            <div>
+              <h4>Telura Energy</h4>
+              <span class="company-city">Karlsruhe / Dresden</span>
+            </div>
+            <div class="company-badge">€100M Target</div>
+          </div>
+          <p>Born from research at KIT and TU Dresden, Telura uses <strong>high-voltage electrical impulses</strong> to fracture rock from the inside out — like breaking it with lightning. Claims up to 90% reduction in drilling costs.</p>
+          <div class="company-milestones">
+            <div class="milestone"><span class="m-year">Late 2026</span><span class="m-text">First pilots planned</span></div>
+          </div>
+        </div>
+
+        <div class="company-card">
+          <div class="company-card__header">
+            <div class="company-icon" style="background:#2e1a1a">🌐</div>
+            <div>
+              <h4>Quaise Energy</h4>
+              <span class="company-city">USA — Global relevance</span>
+            </div>
+          </div>
+          <p>Microwave-based rock melting derived from fusion research. Acknowledged by Hades CEO as a "clever approach" — illustrating global convergence around the same problem that German labs are solving.</p>
+        </div>
+      </div>
+
+      <div class="data-strip">
+        <div class="data-item"><strong>2.6%</strong><span>Annual geothermal growth since 2000</span></div>
+        <div class="data-item"><strong>38%</strong><span>Annual solar growth — the benchmark to beat</span></div>
+        <div class="data-item"><strong>15 yrs</strong><span>Typical EU project cycle: exploration to production</span></div>
+        <div class="data-item"><strong>~90%</strong><span>Potential drilling cost reduction (Telura estimate)</span></div>
+      </div>
+    </div>
+
+    <!-- TAB: AI -->
+    <div class="tab-content" id="tab-ai">
+      <div class="spotlight-hero">
+        <div class="spotlight-badge">April 2026 Issue</div>
+        <h3>The Quiet Frontier: Germany's AI Champions</h3>
+        <p class="spotlight-lead">
+          Not chatbots. Not hype. Foundation models, sovereign infrastructure, and defence AI —
+          built by the researchers who wrote the papers that defined modern deep learning.
+        </p>
+      </div>
+
+      <div class="company-cards">
+        <div class="company-card featured">
+          <div class="company-card__header">
+            <div class="company-icon" style="background:#0d1b2a">🌲</div>
+            <div>
+              <h4>Black Forest Labs</h4>
+              <span class="company-city">Freiburg / Munich</span>
+            </div>
+            <div class="company-badge">Global Benchmark</div>
+          </div>
+          <p>Founded by the team behind Stable Diffusion, BFL's <strong>FLUX model family</strong> leads independent benchmarks for image generation quality — outperforming Midjourney and DALL-E on multiple metrics. Open-weight by default; enterprise API for revenue.</p>
+          <div class="company-milestones">
+            <div class="milestone"><span class="m-year">1M+</span><span class="m-text">FLUX model downloads</span></div>
+            <div class="milestone"><span class="m-year">2024</span><span class="m-text">Founded; global benchmark by 2025</span></div>
+          </div>
+          <blockquote class="company-quote">
+            "We did not want to build another chatbot. We wanted to build the best image generation model in the world — and make it open."
+            <cite>— Robin Rombach, Co-founder</cite>
+          </blockquote>
+        </div>
+
+        <div class="company-card">
+          <div class="company-card__header">
+            <div class="company-icon" style="background:#1a1a2e">🏛️</div>
+            <div>
+              <h4>Aleph Alpha</h4>
+              <span class="company-city">Heidelberg</span>
+            </div>
+            <div class="company-badge">Sovereign AI</div>
+          </div>
+          <p><strong>PhariaAI platform</strong> — designed for GDPR compliance, explainability, and regulated industries. Contracts with German federal government and Bundeswehr-affiliated institutions. The trusted European alternative to US hyperscaler AI.</p>
+        </div>
+
+        <div class="company-card">
+          <div class="company-card__header">
+            <div class="company-icon" style="background:#2e1a1a">🛡️</div>
+            <div>
+              <h4>Helsing</h4>
+              <span class="company-city">Munich</span>
+            </div>
+            <div class="company-badge">€450M+ Raised</div>
+          </div>
+          <p>Europe's leading defence AI company. AI-enabled signal processing and situational awareness for military platforms — directly benefiting from Germany's Zeitenwende defence reorientation and growing European sovereign capability requirements.</p>
+        </div>
+      </div>
+
+      <div class="data-strip">
+        <div class="data-item"><strong>€20.7B</strong><span>German AI market by 2030</span></div>
+        <div class="data-item"><strong>7,500+</strong><span>AI startups in Germany (2025)</span></div>
+        <div class="data-item"><strong>Top 5</strong><span>Global AI patent filer</span></div>
+        <div class="data-item"><strong>€450M+</strong><span>Helsing funding (leading European defence AI)</span></div>
+      </div>
+    </div>
+
+    <!-- TAB: Semiconductors -->
+    <div class="tab-content" id="tab-semicon">
+      <div class="spotlight-hero">
+        <div class="spotlight-badge">Coming — May 2026</div>
+        <h3>The Post-Silicon Future: Germany's Graphene Bet</h3>
+        <p class="spotlight-lead">
+          Silicon has dominated chip architecture for 60 years. Dresden-based Black Semiconductor
+          is building the infrastructure for what comes next.
+        </p>
+      </div>
+
+      <div class="company-cards">
+        <div class="company-card featured">
+          <div class="company-card__header">
+            <div class="company-icon" style="background:#1a1a2e">💎</div>
+            <div>
+              <h4>Black Semiconductor</h4>
+              <span class="company-city">Dresden, Germany</span>
+            </div>
+            <div class="company-badge">Deep Research</div>
+          </div>
+          <p>Developing <strong>graphene-based chip architecture</strong> that promises to overcome the physical limits of silicon. Dresden — home to TSMC's first European fab — provides both the industrial infrastructure and the talent pool for frontier semiconductor development.</p>
+          <blockquote class="company-quote">
+            "Dresden is becoming Europe's Silicon Valley — and graphene is why it will matter beyond 2030."
+          </blockquote>
+        </div>
+
+        <div class="company-card">
+          <div class="company-card__header">
+            <div class="company-icon" style="background:#2e1a00">🏭</div>
+            <div>
+              <h4>TSMC Dresden</h4>
+              <span class="company-city">Dresden, Germany</span>
+            </div>
+            <div class="company-badge">€10B Investment</div>
+          </div>
+          <p>Taiwan Semiconductor Manufacturing Company's first European fabrication plant — a €10 billion anchor investment that validates Dresden as a global semiconductor hub and creates the supply chain Black Semiconductor needs to scale.</p>
+        </div>
+      </div>
+
+      <div class="coming-soon-note">
+        <span>📰</span>
+        Full feature coverage in the <strong>May 2026</strong> issue of the Germany Innovation Newsletter
+      </div>
+    </div>
+
+    <!-- TAB: Quantum Computing -->
+    <div class="tab-content" id="tab-quantum">
+      <div class="spotlight-hero">
+        <div class="spotlight-badge">Research Frontier</div>
+        <h3>The Quantum Leap: Germany's €2B Bet on Post-Classical Computing</h3>
+        <p class="spotlight-lead">
+          Quantum computing promises to solve problems classical computers never can — in drug discovery,
+          logistics, materials science, and cryptography. Germany is investing at national scale to own this frontier.
+        </p>
+      </div>
+
+      <div class="company-cards">
+        <div class="company-card featured">
+          <div class="company-card__header">
+            <div class="company-icon" style="background:#0d1b2a">⚛️</div>
+            <div>
+              <h4>IQM Quantum Computers</h4>
+              <span class="company-city">Munich, Germany</span>
+            </div>
+            <div class="company-badge">€128M Raised</div>
+          </div>
+          <p>Europe's leading quantum hardware company, building <strong>superconducting quantum processors</strong> for research institutions and national supercomputing centres. IQM systems are deployed at Finnish and German supercomputing hubs — the first commercially operating quantum computers on European soil.</p>
+          <div class="company-milestones">
+            <div class="milestone"><span class="m-year">2021</span><span class="m-text">First European quantum computer delivered</span></div>
+            <div class="milestone"><span class="m-year">2024</span><span class="m-text">54-qubit processor operational</span></div>
+          </div>
+          <blockquote class="company-quote">
+            "We are building the hardware layer of Europe's quantum future — and we are building it in Munich."
+            <cite>— Jan Goetz, CEO & Co-founder</cite>
+          </blockquote>
+        </div>
+
+        <div class="company-card">
+          <div class="company-card__header">
+            <div class="company-icon" style="background:#1a2e1a">🔬</div>
+            <div>
+              <h4>Fraunhofer IAF</h4>
+              <span class="company-city">Freiburg, Germany</span>
+            </div>
+            <div class="company-badge">Sovereign Research</div>
+          </div>
+          <p>Germany's Fraunhofer Institute for Applied Solid State Physics develops <strong>quantum sensor technology and photonic chips</strong> — core components for quantum communications and navigation systems that do not rely on GPS or foreign satellite infrastructure.</p>
+        </div>
+
+        <div class="company-card">
+          <div class="company-card__header">
+            <div class="company-icon" style="background:#2e1a00">🏛️</div>
+            <div>
+              <h4>PlanQK Platform</h4>
+              <span class="company-city">Stuttgart / Berlin</span>
+            </div>
+            <div class="company-badge">BMWK-Funded</div>
+          </div>
+          <p>A <strong>quantum algorithm marketplace</strong> funded by Germany's Federal Ministry of Economic Affairs — connecting quantum software developers with hardware providers and enterprise customers. Germany's answer to building a quantum ecosystem rather than isolated labs.</p>
+        </div>
+      </div>
+
+      <div class="data-strip">
+        <div class="data-item"><strong>€2B+</strong><span>German federal quantum investment (2022–2026)</span></div>
+        <div class="data-item"><strong>Top 3</strong><span>Global quantum patent filer (EPO rankings)</span></div>
+        <div class="data-item"><strong>20+</strong><span>Quantum startups headquartered in Germany</span></div>
+        <div class="data-item"><strong>2030</strong><span>Target: fault-tolerant quantum processor (national roadmap)</span></div>
+      </div>
+    </div>
+
+    <!-- TAB: Biomedical -->
+    <div class="tab-content" id="tab-biotech">
+      <div class="spotlight-hero">
+        <div class="spotlight-badge">Research Frontier</div>
+        <h3>Where Biology Meets Engineering: TU Munich Biomedical AI</h3>
+        <p class="spotlight-lead">
+          Artificial skin that senses. Diagnostic AI that outperforms radiologists.
+          Germany's biomedical engineering frontier is redefining what healthcare technology means.
+        </p>
+      </div>
+
+      <div class="company-cards">
+        <div class="company-card featured">
+          <div class="company-card__header">
+            <div class="company-icon" style="background:#1a2e1a">🔬</div>
+            <div>
+              <h4>TU Munich — Biomedical AI</h4>
+              <span class="company-city">Munich, Germany</span>
+            </div>
+            <div class="company-badge">World Top-5 Research</div>
+          </div>
+          <p>Developing <strong>artificial skin</strong> with embedded sensors capable of detecting pressure, temperature, and chemical signals — with applications in prosthetics, robotics, and human-machine interfaces. Simultaneously advancing diagnostic AI models that match or exceed specialist-level accuracy.</p>
+          <blockquote class="company-quote">
+            "Germany's research universities don't produce papers. They produce companies."
+          </blockquote>
+        </div>
+
+        <div class="company-card">
+          <div class="company-card__header">
+            <div class="company-icon" style="background:#2e1a1a">🦾</div>
+            <div>
+              <h4>German Bionic</h4>
+              <span class="company-city">Augsburg, Germany</span>
+            </div>
+            <div class="company-badge">Industrial Exoskeleton</div>
+          </div>
+          <p>Industrial exoskeleton systems that augment human workers in manufacturing and logistics environments — reducing injury, increasing output, and demonstrating how Germany's engineering culture extends into human augmentation technology.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     CAMPAIGN SECTION
+════════════════════════════════════════════════ -->
+<section class="section campaign" id="campaign">
+  <div class="campaign__bg">
+    <div class="campaign__flag-bar">
+      <div class="fb black"></div>
+      <div class="fb red"></div>
+      <div class="fb gold"></div>
+    </div>
+  </div>
+  <div class="section__inner campaign__inner">
+    <div class="section__label light">
+      <div class="label-line light"></div>
+      Nation Branding Strategy
+    </div>
+    <h2 class="section__title light">The Campaign Architecture</h2>
+    <p class="section__lead light">
+      Modelled on the UK GREAT campaign — which delivered £1 return for every £1 spent at a 10.6× ratio —
+      Germany's nation branding strategy targets measurable FDI growth and B2B engagement.
+    </p>
+
+    <div class="campaign__pillars">
+      <div class="pillar">
+        <div class="pillar__num gold-text">01</div>
+        <h4>Investors</h4>
+        <p>LinkedIn, Bloomberg TV, CNN International, Airport DOOH. Reaching C-suite decision-makers where they consume business intelligence.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar__num red-text">02</div>
+        <h4>Trade Partners</h4>
+        <p>Hannover Messe, CES, trade delegations. The highest-conversion channel for B2B relationships — Germany already dominates; now we make it visible.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar__num gold-text">03</div>
+        <h4>Global Talent</h4>
+        <p>Instagram, TikTok, YouTube. Germany's innovation culture must be visible to the next generation of global researchers, engineers, and founders.</p>
+      </div>
+    </div>
+
+    <div class="kpi-row">
+      <div class="kpi"><span class="kpi-val">+20%</span><span class="kpi-label">Target FDI growth in 3 years</span></div>
+      <div class="kpi"><span class="kpi-val">≥€52B</span><span class="kpi-label">Annual FDI inflow target</span></div>
+      <div class="kpi"><span class="kpi-val">2B+</span><span class="kpi-label">Annual campaign impressions</span></div>
+      <div class="kpi"><span class="kpi-val">1:10</span><span class="kpi-label">Target ROI (GREAT benchmark)</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     NEWSLETTER
+════════════════════════════════════════════════ -->
+<section class="section newsletter-sec" id="newsletter">
+  <div class="section__inner">
+    <div class="section__label">
+      <div class="label-line"></div>
+      Monthly Newsletter
+    </div>
+    <h2 class="section__title">Germany Innovation Newsletter</h2>
+    <p class="section__lead">
+      Each month, one deep-tech story from Germany's innovation frontier — curated for
+      international investors, trade partners, and decision-makers. Free. Credible. Evidence-based.
+    </p>
+
+    <div class="issues-preview">
+      <div class="issue-card active-issue">
+        <div class="issue-card__vol">Vol. 1 — March 2026</div>
+        <div class="issue-card__tag energy-tag">⚡ Energy</div>
+        <h4>Drilling Into the Future</h4>
+        <p>How Hades Mining and Telura Energy are reinventing geothermal drilling — and why it could make clean baseload power accessible anywhere on earth.</p>
+        <div class="issue-card__companies">Hades Mining · Telura · Quaise Energy</div>
+      </div>
+      <div class="issue-card">
+        <div class="issue-card__vol">Vol. 2 — April 2026</div>
+        <div class="issue-card__tag ai-tag">🧠 AI</div>
+        <h4>The Quiet Frontier</h4>
+        <p>Germany's AI champions — Black Forest Labs, Aleph Alpha, Helsing — are building frontier models, sovereign infrastructure, and defence AI without Silicon Valley fanfare.</p>
+        <div class="issue-card__companies">Black Forest Labs · Aleph Alpha · Helsing</div>
+      </div>
+      <div class="issue-card upcoming">
+        <div class="issue-card__vol">Vol. 3 — May 2026</div>
+        <div class="issue-card__tag semicon-tag">💡 Semiconductors</div>
+        <h4>The Post-Silicon Future</h4>
+        <p>Dresden's graphene chip revolution. Black Semiconductor and TSMC's €10B European anchor investment — why Germany is positioned to lead the next chip cycle.</p>
+        <div class="issue-card__companies">Black Semiconductor · TSMC Dresden</div>
+        <div class="upcoming-badge">Coming Soon</div>
+      </div>
+    </div>
+
+    <div class="subscribe-box">
+      <h3>Subscribe — It's Free</h3>
+      <p>Join international investors, trade partners, and policy-makers following Germany's innovation story.</p>
+      <form class="subscribe-form" onsubmit="handleSubscribe(event)">
+        <input type="text" placeholder="Your name" class="form-input" required />
+        <input type="email" placeholder="Your email address" class="form-input" required />
+        <select class="form-input form-select">
+          <option value="">Your focus area...</option>
+          <option>Investor / VC</option>
+          <option>Corporate / M&A</option>
+          <option>Government / Policy</option>
+          <option>Research / Academia</option>
+          <option>Media / Press</option>
+          <option>Other</option>
+        </select>
+        <button type="submit" class="btn btn--gold btn--full">Subscribe to Germany Innovation Newsletter →</button>
+      </form>
+      <div class="subscribe-confirm" id="subscribeConfirm">
+        ✓ Thank you! Your first issue will arrive in your inbox shortly.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     CONTACT
+════════════════════════════════════════════════ -->
+<section class="section contact-sec" id="contact">
+  <div class="section__inner contact__inner">
+    <div class="contact__left">
+      <div class="section__label">
+        <div class="label-line"></div>
+        Get in Touch
+      </div>
+      <h2 class="section__title">Contact</h2>
+      <p>For press enquiries, partnership opportunities, or information about the Germany nation branding campaign, reach out to our team.</p>
+      <div class="contact-items">
+        <div class="contact-item">
+          <span class="ci-icon">✉</span>
+          <span>info@germany-innovates.de</span>
+        </div>
+        <div class="contact-item">
+          <span class="ci-icon">🌐</span>
+          <span>germany-innovates.de</span>
+        </div>
+        <div class="contact-item">
+          <span class="ci-icon">🎓</span>
+          <span>FOM University of Applied Sciences — MBA Programme</span>
+        </div>
+      </div>
+    </div>
+    <div class="contact__right">
+      <form class="contact-form" onsubmit="handleContact(event)">
+        <input type="text" placeholder="Name" class="form-input" required />
+        <input type="email" placeholder="Email" class="form-input" required />
+        <input type="text" placeholder="Organisation" class="form-input" />
+        <textarea placeholder="Your message..." class="form-input form-textarea" rows="4" required></textarea>
+        <button type="submit" class="btn btn--gold btn--full">Send Message →</button>
+      </form>
+      <div class="contact-confirm" id="contactConfirm">
+        ✓ Message sent! We will be in touch shortly.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="flag-stripe">
+    <div class="stripe black"></div>
+    <div class="stripe red"></div>
+    <div class="stripe gold"></div>
+  </div>
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <img src="images/Adler_modern.png" class="footer-adler" alt="Bundesadler" />
+      <span class="footer__name">GERMANY INNOVATION Newsletter</span>
+      <span class="footer__tagline">Where Innovation Becomes Industry</span>
+    </div>
+    <div class="footer__links">
+      <a href="#home">Home</a>
+      <a href="#mission">Mission</a>
+      <a href="#innovation">Innovations</a>
+      <a href="#campaign">Campaign</a>
+      <a href="#newsletter">Newsletter</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer__copy">
+      © 2026 Germany Innovation Newsletter · FOM University of Applied Sciences · MBA Programme<br/>
+      Produced for academic purposes. Sources: Handelsblatt, Deutsche Bundesbank, Santander Trade, GTAI.
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
