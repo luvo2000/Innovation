@@ -1,22 +1,59 @@
+
 // ═══════════════════════════════════════════════
-//  NAVBAR — scroll effect + active link highlight
+//  POSTER CAROUSEL
 // ═══════════════════════════════════════════════
-const navbar   = document.getElementById('navbar');
-const navLinks = document.querySelectorAll('.nav-link');
-const sections = document.querySelectorAll('section[id]');
+(function initCarousel() {
+  const track  = document.getElementById('carouselTrack');
+  const dotsEl = document.getElementById('carouselDots');
+  if (!track) return;
+
+  const slides = Array.from(track.querySelectorAll('.carousel__slide'));
+  const total  = slides.length;
+  let current  = 0;
+
+  // Build dots
+  slides.forEach((_, i) => {
+    const dot = document.createElement('button');
+    dot.className = 'carousel__dot' + (i === 0 ? ' active' : '');
+    dot.setAttribute('aria-label', `Slide ${i + 1}`);
+    dot.addEventListener('click', () => goTo(i));
+    dotsEl.appendChild(dot);
+  });
+
+  function goTo(idx) {
+    current = (idx + total) % total;
+    // Offset so active slide is centred — shift by (active - 1) * slideWidth
+    const slideWidth = track.parentElement.offsetWidth * 0.6 + 16; // 60% + padding
+    const offset = current * slideWidth - (track.parentElement.offsetWidth - slideWidth) / 2;
+    track.style.transform = `translateX(-${Math.max(0, offset)}px)`;
+
+    slides.forEach((s, i) => s.classList.toggle('active', i === current));
+    dotsEl.querySelectorAll('.carousel__dot').forEach((d, i) =>
+      d.classList.toggle('active', i === current));
+  }
+
+  // Clicking a side slide centres it
+  slides.forEach((slide, i) => {
+    slide.addEventListener('click', () => { if (i !== current) goTo(i); });
+    slide.style.cursor = 'pointer';
+  });
+
+  goTo(0);
+
+  window.carouselPrev = () => goTo(current - 1);
+  window.carouselNext = () => goTo(current + 1);
+
+  // Recalculate on resize
+  window.addEventListener('resize', () => goTo(current));
+})();
+
+// ═══════════════════════════════════════════════
+//  NAVBAR — scroll shadow (active link set in HTML per page)
+// ═══════════════════════════════════════════════
+const navbar = document.getElementById('navbar');
 
 window.addEventListener('scroll', () => {
-  // Scrolled shadow
   navbar.classList.toggle('scrolled', window.scrollY > 40);
-
-  // Active link via IntersectionObserver fallback (simple version)
-  let current = '';
-  sections.forEach(sec => {
-    if (window.scrollY >= sec.offsetTop - 120) current = sec.id;
-  });
-  navLinks.forEach(link => {
-    link.classList.toggle('active', link.getAttribute('href') === `#${current}`);
-  });
 });
 
 // ═══════════════════════════════════════════════

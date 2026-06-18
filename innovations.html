@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Innovation Spotlights — Germany Innovation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+
+<!-- ═══════════════════════════════════════════════
+     NAVBAR
+════════════════════════════════════════════════ -->
+<header class="navbar" id="navbar">
+  <div class="navbar__inner">
+    <a href="index.html" class="navbar__logo">
+      <img src="images/Adler_modern.png" class="logo-bundesadler" alt="Bundesadler" />
+      <span class="logo-text">GERMANY<span class="logo-sub">Where Innovation Becomes Industry</span></span>
+    </a>
+
+    <nav class="navbar__links" id="navLinks">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="innovations.html" class="nav-link active">Innovations</a>
+      <a href="campaign.html" class="nav-link">Campaign</a>
+      <a href="newsletter.html" class="nav-link">Newsletter</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <!-- German flag stripe -->
+  <div class="flag-stripe">
+    <div class="stripe black"></div>
+    <div class="stripe red"></div>
+    <div class="stripe gold"></div>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════════════
+     INNOVATION SPOTLIGHTS
+════════════════════════════════════════════════ -->
+<section class="section innovations" id="innovation">
+  <div class="section__inner">
+    <div class="section__label">
+      <div class="label-line"></div>
+      Innovation Spotlights
+    </div>
+    <h2 class="section__title">Germany's Deep-Tech Frontier</h2>
+    <p class="section__lead">
+      Five proof points that Germany's innovation pipeline is deeper — and more investable — than the world realises.
+    </p>
+
+    <!-- Tabs -->
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="energy">⚡ Energy</button>
+      <button class="tab-btn" data-tab="ai">🧠 Artificial Intelligence</button>
+      <button class="tab-btn" data-tab="semicon">💡 Semiconductors</button>
+      <button class="tab-btn" data-tab="biotech">🧬 Biomedical</button>
+      <button class="tab-btn" data-tab="quantum">⚛️ Quantum</button>
+      <button class="tab-btn" data-tab="photonics">🔦 Photonics</button>
+    </div>
+
+    <!-- TAB: Energy -->
+    <div class="tab-content active" id="tab-energy">
+      <div class="spotlight-hero">
+        <div class="spotlight-badge">March 2026 Issue</div>
+        <h3>Drilling Into the Future: Germany's Geothermal Revolution</h3>
+        <p class="spotlight-lead">
+          Geothermal energy is CO₂-free, always-on, and land-efficient. The barrier has always been cost.
+          Two German startups are about to change that.
+        </p>
+      </div>
+
+      <div class="company-cards">
+        <div class="company-card featured">
+          <div class="company-card__header">
+            <div class="company-icon" style="background:#1a1a2e">⛏️</div>
+            <div>
+              <h4>Hades Mining</h4>
+              <span class="company-city">Munich, Germany</span>
+            </div>
+            <div class="company-badge">€15M Seed</div>
+          </div>
+          <p>Developing high-powered <strong>laser drilling systems</strong> that keep sensitive technology above ground — transmitting energy downward through optical systems. Contactless drilling dramatically reduces costs and enables sites previously considered unviable.</p>
+          <div class="company-milestones">
+            <div class="milestone"><span class="m-year">2028</span><span class="m-text">1 km depth target</span></div>
+            <div class="milestone"><span class="m-year">2029</span><span class="m-text">First commercial use</span></div>
+          </div>
+          <blockquote class="company-quote">
+            "Drilling costs make up 30–70% of total capex. We are fixing that."
+            <cite>— Max Werner, CEO</cite>
+          </blockquote>
+        </div>
+
+        <div class="company-card">
+          <div class="company-card__header">
+            <div class="company-icon" style="background:#1a2e1a">⚡</div>
+            <div>
+              <h4>Telura Energy</h4>
+              <span class="company-city">Karlsruhe / Dresden</span>
+            </div>
+            <div class="company-badge">€100M Target</div>
+          </div>
+          <p>Born from research at KIT and TU Dresden, Telura uses <strong>high-voltage electrical impulses</strong> to fracture rock from the inside out — like breaking it with lightning. Claims up to 90% reduction in drilling costs.</p>
+          <div class="company-milestones">
+            <div class="milestone"><span class="m-year">Late 2026</span><span class="m-text">First pilots planned</span></div>
+          </div>
+        </div>
+
+        <div class="company-card">
+          <div class="company-card__header">
+            <div class="company-icon" style="background:#2e1a1a">🌐</div>
+            <div>
+              <h4>Quaise Energy</h4>
+              <span class="company-city">USA — Global relevance</span>
+            </div>
+          </div>
+          <p>Microwave-based rock melting derived from fusion research. Acknowledged by Hades CEO as a "clever approach" — illustrating global convergence around the same problem that German labs are solving.</p>
+        </div>
+      </div>
+
+      <div class="data-strip">
+        <div class="data-item"><strong>2.6%</strong><span>Annual geothermal growth since 2000</span></div>
+        <div class="data-item"><strong>38%</strong><span>Annual solar growth — the benchmark to beat</span></div>
+        <div class="data-item"><strong>15 yrs</strong><span>Typical EU project cycle: exploration to production</span></div>
+        <div class="data-item"><strong>~90%</strong><span>Potential drilling cost reduction (Telura estimate)</span></div>
+      </div>
+    </div>
+
+    <!-- TAB: AI -->
+    <div class="tab-content" id="tab-ai">
+      <div class="spotlight-hero">
+        <div class="spotlight-badge">April 2026 Issue</div>
+        <h3>The Quiet Frontier: Germany's AI Champions</h3>
+        <p class="spotlight-lead">
+          Not chatbots. Not hype. Foundation models, sovereign infrastructure, and defence AI —
+          built by the researchers who wrote the papers that defined modern deep learning.
+        </p>
+      </div>
+
+      <div class="company-cards">
+        <div class="company-card featured">
+          <div class="company-card__header">
+            <div class="company-icon" style="background:#0d1b2a">🌲</div>
+            <div>
+              <h4>Black Forest Labs</h4>
+              <span class="company-city">Freiburg / Munich</span>
+            </div>
+            <div class="company-badge">Global Benchmark</div>
+          </div>
+          <p>Founded by the team behind Stable Diffusion, BFL's <strong>FLUX model family</strong> leads independent benchmarks for image generation quality — outperforming Midjourney and DALL-E on multiple metrics. Open-weight by default; enterprise API for revenue.</p>
+          <div class="company-milestones">
+            <div class="milestone"><span class="m-year">1M+</span><span class="m-text">FLUX model downloads</span></div>
+            <div class="milestone"><span class="m-year">2024</span><span class="m-text">Founded; global benchmark by 2025</span></div>
+          </div>
+          <blockquote class="company-quote">
+            "We did not want to build another chatbot. We wanted to build the best image generation model in the world — and make it open."
+            <cite>— Robin Rombach, Co-founder</cite>
+          </blockquote>
+        </div>
+
+        <div class="company-card">
+          <div class="company-card__header">
+            <div class="company-icon" style="background:#1a1a2e">🏛️</div>
+            <div>
+              <h4>Aleph Alpha</h4>
+              <span class="company-city">Heidelberg</span>
+            </div>
+            <div class="company-badge">Sovereign AI</div>
+          </div>
+          <p><strong>PhariaAI platform</strong> — designed for GDPR compliance, explainability, and regulated industries. Contracts with German federal government and Bundeswehr-affiliated institutions. The trusted European alternative to US hyperscaler AI.</p>
+        </div>
+
+        <div class="company-card">
+          <div class="company-card__header">
+            <div class="company-icon" style="background:#2e1a1a">🛡️</div>
+            <div>
+              <h4>Helsing</h4>
+              <span class="company-city">Munich</span>
+            </div>
+            <div class="company-badge">€450M+ Raised</div>
+          </div>
+          <p>Europe's leading defence AI company. AI-enabled signal processing and situational awareness for military platforms — directly benefiting from Germany's Zeitenwende defence reorientation and growing European sovereign capability requirements.</p>
+        </div>
+      </div>
+
+      <div class="data-strip">
+        <div class="data-item"><strong>€20.7B</strong><span>German AI market by 2030</span></div>
+        <div class="data-item"><strong>7,500+</strong><span>AI startups in Germany (2025)</span></div>
+        <div class="data-item"><strong>Top 5</strong><span>Global AI patent filer</span></div>
+        <div class="data-item"><strong>€450M+</strong><span>Helsing funding (leading European defence AI)</span></div>
+      </div>
+    </div>
+
+    <!-- TAB: Semiconductors -->
+    <div class="tab-content" id="tab-semicon">
+      <div class="spotlight-hero">
+        <div class="spotlight-badge">May 2026 Issue</div>
+        <h3>Germany's Chip Offensive: From Graphene to Silicon Carbide</h3>
+        <p class="spotlight-lead">
+          Germany is investing over €20 billion in semiconductor sovereignty. From Aachen's
+          graphene photonics startup to Munich's SiC powerhouse and Dresden's new €10B foundry —
+          the foundations of Europe's chip future are being built here.
+        </p>
+      </div>
+
+      <div class="company-cards">
+        <div class="company-card featured">
+          <div class="company-card__header">
+            <div class="company-icon" style="background:#1a1a2e">💎</div>
+            <div>
+              <h4>Black Semiconductor</h4>
+              <span class="company-city">Aachen, Germany</span>
+            </div>
+            <div class="company-badge">€254M Raised</div>
+          </div>
+          <p>Spun out of the AMO research centre in Aachen, Black Semiconductor is building the world's first <strong>graphene photonics chip</strong> — replacing electrical signals between chips with light, enabling dramatically faster and more energy-efficient data centres and AI hardware. A 300mm wafer pilot line (FabONE) is under construction, with pilot production targeted for 2027 and volume production from 2029.</p>
+          <div class="company-milestones">
+            <div class="milestone"><span class="m-year">2027</span><span class="m-text">Pilot production — FabONE Aachen</span></div>
+            <div class="milestone"><span class="m-year">2029</span><span class="m-text">Volume production target</span></div>
+          </div>
+          <blockquote class="company-quote">
+            "We are not improving silicon — we are replacing the interconnect layer entirely with light."
+          </blockquote>
+        </div>
+
+        <div class="company-card">
+          <div class="company-card__header">
+            <div class="company-icon" style="background:#2e1a00">⚡</div>
+            <div>
+              <h4>Infineon Technologies</h4>
+              <span class="company-city">Munich, Germany</span>
+            </div>
+            <div class="company-badge">€5B SiC Pipeline</div>
+          </div>
+          <p>Germany's largest semiconductor company and the global leader in <strong>Silicon Carbide (SiC) power chips</strong> — the critical component in EV drivetrains, renewable energy inverters, and AI power systems. In 2025, Infineon backed its SiC rollout with €5 billion in customer commitments, targeting 30% global SiC market share by 2030. Also acquired Marvell's Automotive Ethernet unit for $2.5B to lead the software-defined vehicle era.</p>
+        </div>
+
+        <div class="company-card">
+          <div class="company-card__header">
+            <div class="company-icon" style="background:#1a2e1a">🏭</div>
+            <div>
+              <h4>ESMC — Dresden Fab</h4>
+              <span class="company-city">Dresden, Germany</span>
+            </div>
+            <div class="company-badge">€10B+ Investment</div>
+          </div>
+          <p>The European Semiconductor Manufacturing Company — a joint venture of <strong>TSMC, Bosch, Infineon, and NXP</strong> — is building Europe's most advanced chip foundry in Dresden. Structural construction is complete; equipment move-in begins 2H 2026, with first wafer production targeted for 2027. The fab will produce 28/22nm and 16/12nm FinFET chips — making Dresden Europe's answer to Taiwan's silicon dominance.</p>
+          <div class="company-milestones">
+            <div class="milestone"><span class="m-year">2H 2026</span><span class="m-text">Equipment move-in begins</span></div>
+            <div class="milestone"><span class="m-year">2027</span><span class="m-text">First wafer production</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="data-strip">
+        <div class="data-item"><strong>€20B+</strong><span>German federal Chips Act investment</span></div>
+        <div class="data-item"><strong>€10B+</strong><span>ESMC Dresden fab (TSMC · Bosch · Infineon · NXP)</span></div>
+        <div class="data-item"><strong>€254M</strong><span>Black Semiconductor raised for graphene chip fab</span></div>
+        <div class="data-item"><strong>30%</strong><span>Infineon's global SiC market share target by 2030</span></div>
+      </div>
+    </div>
+
+    <!-- TAB: Quantum Computing -->
+    <div class="tab-content" id="tab-quantum">
+      <div class="spotlight-hero">
+        <div class="spotlight-badge">Research Frontier</div>
+        <h3>The Quantum Leap: Germany's €2B Bet on Post-Classical Computing</h3>
+        <p class="spotlight-lead">
+          Quantum computing promises to solve problems classical computers never can — in drug discovery,
+          logistics, materials science, and cryptography. Germany is investing at national scale to own this frontier.
+        </p>
+      </div>
+
+      <div class="company-cards">
+        <div class="company-card featured">
+          <div class="company-card__header">
+            <div class="company-icon" style="background:#0d1b2a">⚛️</div>
+            <div>
+              <h4>IQM Quantum Computers</h4>
+              <span class="company-city">Munich, Germany</span>
+            </div>
+            <div class="company-badge">€128M Raised</div>
+          </div>
+          <p>Europe's leading quantum hardware company, building <strong>superconducting quantum processors</strong> for research institutions and national supercomputing centres. IQM systems are deployed at Finnish and German supercomputing hubs — the first commercially operating quantum computers on European soil.</p>
+          <div class="company-milestones">
+            <div class="milestone"><span class="m-year">2021</span><span class="m-text">First European quantum computer delivered</span></div>
+            <div class="milestone"><span class="m-year">2024</span><span class="m-text">54-qubit processor operational</span></div>
+          </div>
+          <blockquote class="company-quote">
+            "We are building the hardware layer of Europe's quantum future — and we are building it in Munich."
+            <cite>— Jan Goetz, CEO & Co-founder</cite>
+          </blockquote>
+        </div>
+
+        <div class="company-card">
+          <div class="company-card__header">
+            <div class="company-icon" style="background:#1a2e1a">🔬</div>
+            <div>
+              <h4>Fraunhofer IAF</h4>
+              <span class="company-city">Freiburg, Germany</span>
+            </div>
+            <div class="company-badge">Sovereign Research</div>
+          </div>
+          <p>Germany's Fraunhofer Institute for Applied Solid State Physics develops <strong>quantum sensor technology and photonic chips</strong> — core components for quantum communications and navigation systems that do not rely on GPS or foreign satellite infrastructure.</p>
+        </div>
+
+        <div class="company-card">
+          <div class="company-card__header">
+            <div class="company-icon" style="background:#2e1a00">🏛️</div>
+            <div>
+              <h4>PlanQK Platform</h4>
+              <span class="company-city">Stuttgart / Berlin</span>
+            </div>
+            <div class="company-badge">BMWK-Funded</div>
+          </div>
+          <p>A <strong>quantum algorithm marketplace</strong> funded by Germany's Federal Ministry of Economic Affairs — connecting quantum software developers with hardware providers and enterprise customers. Germany's answer to building a quantum ecosystem rather than isolated labs.</p>
+        </div>
+      </div>
+
+      <div class="data-strip">
+        <div class="data-item"><strong>€2B+</strong><span>German federal quantum investment (2022–2026)</span></div>
+        <div class="data-item"><strong>Top 3</strong><span>Global quantum patent filer (EPO rankings)</span></div>
+        <div class="data-item"><strong>20+</strong><span>Quantum startups headquartered in Germany</span></div>
+        <div class="data-item"><strong>2030</strong><span>Target: fault-tolerant quantum processor (national roadmap)</span></div>
+      </div>
+    </div>
+
+    <!-- TAB: Biomedical -->
+    <div class="tab-content" id="tab-biotech">
+      <div class="spotlight-hero">
+        <div class="spotlight-badge">Research Frontier</div>
+        <h3>Where Biology Meets Engineering: TU Munich Biomedical AI</h3>
+        <p class="spotlight-lead">
+          Artificial skin that senses. Diagnostic AI that outperforms radiologists.
+          Germany's biomedical engineering frontier is redefining what healthcare technology means.
+        </p>
+      </div>
+
+      <div class="company-cards">
+        <div class="company-card featured">
+          <div class="company-card__header">
+            <div class="company-icon" style="background:#1a2e1a">🔬</div>
+            <div>
+              <h4>TU Munich — Biomedical AI</h4>
+              <span class="company-city">Munich, Germany</span>
+            </div>
+            <div class="company-badge">World Top-5 Research</div>
+          </div>
+          <p>Developing <strong>artificial skin</strong> with embedded sensors capable of detecting pressure, temperature, and chemical signals — with applications in prosthetics, robotics, and human-machine interfaces. Simultaneously advancing diagnostic AI models that match or exceed specialist-level accuracy.</p>
+          <blockquote class="company-quote">
+            "Germany's research universities don't produce papers. They produce companies."
+          </blockquote>
+        </div>
+
+        <div class="company-card">
+          <div class="company-card__header">
+            <div class="company-icon" style="background:#2e1a1a">🦾</div>
+            <div>
+              <h4>German Bionic</h4>
+              <span class="company-city">Augsburg, Germany</span>
+            </div>
+            <div class="company-badge">Industrial Exoskeleton</div>
+          </div>
+          <p>Industrial exoskeleton systems that augment human workers in manufacturing and logistics environments — reducing injury, increasing output, and demonstrating how Germany's engineering culture extends into human augmentation technology.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB: Photonics -->
+    <div class="tab-content" id="tab-photonics">
+      <div class="spotlight-hero">
+        <div class="spotlight-badge">Deep Tech Frontier</div>
+        <h3>Light as a Tool: Germany's Photonics Powerhouse</h3>
+        <p class="spotlight-lead">
+          Germany produces 39% of Europe's entire photonics output — €50 billion in annual sales.
+          From the world's largest industrial laser manufacturer to quantum-ready glass components,
+          German light technology is reshaping semiconductors, manufacturing, and defence.
+        </p>
+      </div>
+
+      <div class="company-cards">
+        <div class="company-card featured">
+          <div class="company-card__header">
+            <div class="company-icon" style="background:#1a1a2e">🔆</div>
+            <div>
+              <h4>TRUMPF</h4>
+              <span class="company-city">Ditzingen, Germany</span>
+            </div>
+            <div class="company-badge">€4.3B Revenue</div>
+          </div>
+          <p>The world's largest industrial laser manufacturer. TRUMPF's laser systems power semiconductor fabs, automotive production lines, and — increasingly — European defence applications. In 2025, TRUMPF launched a quantum computing consortium with Fraunhofer ILT to use quantum algorithms to design fundamentally better lasers.</p>
+          <div class="company-milestones">
+            <div class="milestone"><span class="m-year">18,000+</span><span class="m-text">Employees worldwide</span></div>
+            <div class="milestone"><span class="m-year">2025</span><span class="m-text">Enters European defence tech</span></div>
+          </div>
+          <blockquote class="company-quote">
+            "Photonics is not a niche — it is the enabling technology of the 21st century."
+          </blockquote>
+        </div>
+
+        <div class="company-card">
+          <div class="company-card__header">
+            <div class="company-icon" style="background:#1a2e1a">🔬</div>
+            <div>
+              <h4>Jenoptik</h4>
+              <span class="company-city">Jena, Germany</span>
+            </div>
+            <div class="company-badge">€1.05B Revenue</div>
+          </div>
+          <p>A global photonics group specialising in semiconductor optics, medical technology, and metrology. Jenoptik opened a new high-tech factory in Dresden in 2025 producing micro-optics for semiconductor equipment — and is expanding its Jena campus with a new precision manufacturing facility for advanced F-theta lenses used in 3D printing and battery production.</p>
+          <div class="company-milestones">
+            <div class="milestone"><span class="m-year">2025</span><span class="m-text">New Dresden factory opened</span></div>
+          </div>
+        </div>
+
+        <div class="company-card">
+          <div class="company-card__header">
+            <div class="company-icon" style="background:#2e1a00">💎</div>
+            <div>
+              <h4>LPKF Laser &amp; Electronics</h4>
+              <span class="company-city">Garbsen, Germany</span>
+            </div>
+            <div class="company-badge">LIDE Technology</div>
+          </div>
+          <p>LPKF's proprietary <strong>LIDE technology</strong> (Laser Induced Deep Etching) enables ultra-precise structuring of glass for next-generation semiconductor packaging — entering high-volume manufacturing qualification in 2026. LPKF also develops glass components for quantum computers: ion traps, vacuum chambers, and quantum sensors produced via laser micromachining.</p>
+          <div class="company-milestones">
+            <div class="milestone"><span class="m-year">2026</span><span class="m-text">LIDE HVM qualification</span></div>
+            <div class="milestone"><span class="m-year">2028</span><span class="m-text">Full-scale production target</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="data-strip">
+        <div class="data-item"><strong>€50B</strong><span>German photonics industry revenue (2024)</span></div>
+        <div class="data-item"><strong>39%</strong><span>Share of Europe's total photonics output</span></div>
+        <div class="data-item"><strong>188,000</strong><span>Employees across ~1,000 manufacturers</span></div>
+        <div class="data-item"><strong>76%</strong><span>Export share — one of Germany's most global sectors</span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="flag-stripe">
+    <div class="stripe black"></div>
+    <div class="stripe red"></div>
+    <div class="stripe gold"></div>
+  </div>
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <img src="images/Adler_modern.png" class="footer-adler" alt="Bundesadler" />
+      <span class="footer__name">GERMANY NATION BRANDING CONCEPT</span>
+      <span class="footer__tagline">Where Innovation Becomes Industry</span>
+    </div>
+    <div class="footer__links">
+      <a href="index.html">Home</a>
+      <a href="index.html">Mission</a>
+      <a href="innovations.html">Innovations</a>
+      <a href="campaign.html">Campaign</a>
+      <a href="newsletter.html">Newsletter</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer__copy">
+      © 2026 Germany Nation Branding Concept · FOM University of Applied Sciences · MBA Programme<br/>
+      Produced for academic purposes. Sources: Handelsblatt, Deutsche Bundesbank, Santander Trade, GTAI.
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

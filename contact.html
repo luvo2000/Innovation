@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Germany Innovation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+
+<!-- ═══════════════════════════════════════════════
+     NAVBAR
+════════════════════════════════════════════════ -->
+<header class="navbar" id="navbar">
+  <div class="navbar__inner">
+    <a href="index.html" class="navbar__logo">
+      <img src="images/Adler_modern.png" class="logo-bundesadler" alt="Bundesadler" />
+      <span class="logo-text">GERMANY<span class="logo-sub">Where Innovation Becomes Industry</span></span>
+    </a>
+
+    <nav class="navbar__links" id="navLinks">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="innovations.html" class="nav-link">Innovations</a>
+      <a href="campaign.html" class="nav-link">Campaign</a>
+      <a href="newsletter.html" class="nav-link">Newsletter</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
+    </nav>
+
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <!-- German flag stripe -->
+  <div class="flag-stripe">
+    <div class="stripe black"></div>
+    <div class="stripe red"></div>
+    <div class="stripe gold"></div>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════════════
+     ACADEMIC DOCUMENTATION
+════════════════════════════════════════════════ -->
+<section class="section academic-sec" id="academic">
+  <div class="section__inner">
+    <div class="section__label">
+      <div class="label-line"></div>
+      Academic Context
+    </div>
+    <h2 class="section__title">Academic Documentation</h2>
+    <p class="section__lead">
+      This campaign was developed as part of an MBA seminar paper at FOM University of Applied Sciences.
+      The strategy draws on Anholt's Nation Branding Hexagon and Dinnie's competitive identity framework,
+      applied to Germany's deep-tech innovation ecosystem. The full paper covers campaign objectives,
+      target audience analysis, media planning, and instrument design.
+    </p>
+    <a href="javascript:void(0)" class="btn btn--gold academic-btn academic-btn--soon" title="Paper upload coming soon">View Paper → <span class="soon-badge">Coming Soon</span></a>
+    <p class="academic-note">
+      Produced for academic purposes. All campaign figures, ROI projections, and media cost benchmarks
+      are drawn from publicly available 2024–2025 market sources.
+    </p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     CONTACT
+════════════════════════════════════════════════ -->
+<section class="section contact-sec" id="contact">
+  <div class="section__inner contact__inner">
+    <div class="contact__left">
+      <div class="section__label">
+        <div class="label-line"></div>
+        Get in Touch
+      </div>
+      <h2 class="section__title">Contact</h2>
+      <p>For press enquiries, partnership opportunities, or information about the Germany nation branding campaign, reach out to our team.</p>
+      <div class="contact-items">
+        <div class="contact-item">
+          <span class="ci-icon">✉</span>
+          <span>info@germany-innovates.de</span>
+        </div>
+        <div class="contact-item">
+          <span class="ci-icon">🌐</span>
+          <span>germany-innovates.de</span>
+        </div>
+        <div class="contact-item">
+          <span class="ci-icon">🎓</span>
+          <span>FOM University of Applied Sciences — MBA Programme</span>
+        </div>
+      </div>
+    </div>
+    <div class="contact__right">
+      <form class="contact-form" onsubmit="handleContact(event)">
+        <input type="text" placeholder="Name" class="form-input" required />
+        <input type="email" placeholder="Email" class="form-input" required />
+        <input type="text" placeholder="Organisation" class="form-input" />
+        <textarea placeholder="Your message..." class="form-input form-textarea" rows="4" required></textarea>
+        <button type="submit" class="btn btn--gold btn--full">Send Message →</button>
+      </form>
+      <div class="contact-confirm" id="contactConfirm">
+        ✓ Message sent! We will be in touch shortly.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="flag-stripe">
+    <div class="stripe black"></div>
+    <div class="stripe red"></div>
+    <div class="stripe gold"></div>
+  </div>
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <img src="images/Adler_modern.png" class="footer-adler" alt="Bundesadler" />
+      <span class="footer__name">GERMANY NATION BRANDING CONCEPT</span>
+      <span class="footer__tagline">Where Innovation Becomes Industry</span>
+    </div>
+    <div class="footer__links">
+      <a href="index.html">Home</a>
+      <a href="index.html">Mission</a>
+      <a href="innovations.html">Innovations</a>
+      <a href="campaign.html">Campaign</a>
+      <a href="newsletter.html">Newsletter</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer__copy">
+      © 2026 Germany Nation Branding Concept · FOM University of Applied Sciences · MBA Programme<br/>
+      Produced for academic purposes. Sources: Handelsblatt, Deutsche Bundesbank, Santander Trade, GTAI.
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Campaign Architecture — Germany Innovation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+
+<!-- ═══════════════════════════════════════════════
+     NAVBAR
+════════════════════════════════════════════════ -->
+<header class="navbar" id="navbar">
+  <div class="navbar__inner">
+    <a href="index.html" class="navbar__logo">
+      <img src="images/Adler_modern.png" class="logo-bundesadler" alt="Bundesadler" />
+      <span class="logo-text">GERMANY<span class="logo-sub">Where Innovation Becomes Industry</span></span>
+    </a>
+
+    <nav class="navbar__links" id="navLinks">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="innovations.html" class="nav-link">Innovations</a>
+      <a href="campaign.html" class="nav-link active">Campaign</a>
+      <a href="newsletter.html" class="nav-link">Newsletter</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <!-- German flag stripe -->
+  <div class="flag-stripe">
+    <div class="stripe black"></div>
+    <div class="stripe red"></div>
+    <div class="stripe gold"></div>
+  </div>
+</header>
+
+<!-- MEDIA PLAN -->
+<section class="section mission" id="media-plan">
+  <div class="section__inner">
+    <div class="section__label"><div class="label-line"></div>Nation Branding Campaign</div>
+    <h2 class="section__title">€60M Annual Media Plan</h2>
+    <!-- Media Plan -->
+    <div class="media-plan">
+      <div class="media-plan__header">
+        <div class="media-plan__title-block">
+          <span class="media-plan__label">Nation Branding Campaign</span>
+          <h3 class="media-plan__title">€60M Annual Media Plan</h3>
+          <p class="media-plan__intro">
+            The campaign reaches three distinct audiences — investors, trade partners, and global talent —
+            through seven channel categories, each selected for its fit with a specific communication objective.
+            Channel mix and cost benchmarks are drawn from verified 2024–2025 market data.
+          </p>
+        </div>
+        <div class="media-plan__total-box">
+          <span class="mt-num">2B+</span>
+          <span class="mt-label">Annual impressions</span>
+        </div>
+      </div>
+
+      <div class="media-grid">
+        <div class="media-item" data-audience="Investors · B2B">
+          <div class="mi-left">
+            <div class="mi-color" style="background:#D4A017"></div>
+            <div class="mi-meta">
+              <span class="mi-channel">LinkedIn</span>
+              <span class="mi-why">C-suite targeting precision · long-form professional content</span>
+            </div>
+          </div>
+          <div class="mi-right">
+            <div class="mi-bar-wrap">
+              <div class="mi-bar" style="--w:100%; background:#D4A017"></div>
+            </div>
+            <div class="mi-figures">
+              <span class="mi-budget">€12M</span>
+              <span class="mi-share">20%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="media-item" data-audience="Investors">
+          <div class="mi-left">
+            <div class="mi-color" style="background:#CC0000"></div>
+            <div class="mi-meta">
+              <span class="mi-channel">Premium TV <span class="mi-sub">CNN · Bloomberg · BBC</span></span>
+              <span class="mi-why">Institutional credibility signals unreplicable by digital alone</span>
+            </div>
+          </div>
+          <div class="mi-right">
+            <div class="mi-bar-wrap">
+              <div class="mi-bar" style="--w:83%; background:#CC0000"></div>
+            </div>
+            <div class="mi-figures">
+              <span class="mi-budget">€10M</span>
+              <span class="mi-share">17%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="media-item" data-audience="Investors · B2B">
+          <div class="mi-left">
+            <div class="mi-color" style="background:#003366"></div>
+            <div class="mi-meta">
+              <span class="mi-channel">Trade Fairs <span class="mi-sub">Hannover Messe · CES</span></span>
+              <span class="mi-why">Highest-conversion channel for B2B relationship formation</span>
+            </div>
+          </div>
+          <div class="mi-right">
+            <div class="mi-bar-wrap">
+              <div class="mi-bar" style="--w:75%; background:#003366"></div>
+            </div>
+            <div class="mi-figures">
+              <span class="mi-budget">€9M</span>
+              <span class="mi-share">15%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="media-item" data-audience="Investors · B2B">
+          <div class="mi-left">
+            <div class="mi-color" style="background:#8a6500"></div>
+            <div class="mi-meta">
+              <span class="mi-channel">Airport DOOH <span class="mi-sub">7 Global Hubs</span></span>
+              <span class="mi-why">Reaches mobile decision-makers at the moment of global travel</span>
+            </div>
+          </div>
+          <div class="mi-right">
+            <div class="mi-bar-wrap">
+              <div class="mi-bar" style="--w:67%; background:#8a6500"></div>
+            </div>
+            <div class="mi-figures">
+              <span class="mi-budget">€8M</span>
+              <span class="mi-share">13%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="media-item" data-audience="All Groups">
+          <div class="mi-left">
+            <div class="mi-color" style="background:#CC0000"></div>
+            <div class="mi-meta">
+              <span class="mi-channel">YouTube</span>
+              <span class="mi-why">Broad reach across investor, B2B and talent audiences</span>
+            </div>
+          </div>
+          <div class="mi-right">
+            <div class="mi-bar-wrap">
+              <div class="mi-bar" style="--w:58%; background:#CC0000"></div>
+            </div>
+            <div class="mi-figures">
+              <span class="mi-budget">€7M</span>
+              <span class="mi-share">12%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="media-item" data-audience="Talent">
+          <div class="mi-left">
+            <div class="mi-color" style="background:#D4A017"></div>
+            <div class="mi-meta">
+              <span class="mi-channel">Instagram &amp; TikTok</span>
+              <span class="mi-why">Talent acquisition — Germany's culture visible to next-gen engineers</span>
+            </div>
+          </div>
+          <div class="mi-right">
+            <div class="mi-bar-wrap">
+              <div class="mi-bar" style="--w:42%; background:#D4A017"></div>
+            </div>
+            <div class="mi-figures">
+              <span class="mi-budget">€5M</span>
+              <span class="mi-share">8%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="media-item" data-audience="All Groups">
+          <div class="mi-left">
+            <div class="mi-color" style="background:#003366"></div>
+            <div class="mi-meta">
+              <span class="mi-channel">Programmatic Display</span>
+              <span class="mi-why">Precision retargeting across all audiences at scale</span>
+            </div>
+          </div>
+          <div class="mi-right">
+            <div class="mi-bar-wrap">
+              <div class="mi-bar" style="--w:33%; background:#003366"></div>
+            </div>
+            <div class="mi-figures">
+              <span class="mi-budget">€4M</span>
+              <span class="mi-share">7%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="media-plan__footer">
+        <div class="mpf-item">
+          <span class="mpf-label">Benchmark</span>
+          <span class="mpf-val">UK GREAT Campaign · ROI £1 : £10.6</span>
+        </div>
+        <div class="mpf-item">
+          <span class="mpf-label">Target ROI</span>
+          <span class="mpf-val">≥ €1 : €10</span>
+        </div>
+        <div class="mpf-item">
+          <span class="mpf-label">Source</span>
+          <span class="mpf-val">The B2B House · Adwave · Plug Talk Media (2025–26)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     CAMPAIGN SECTION
+════════════════════════════════════════════════ -->
+<section class="section campaign" id="campaign">
+  <div class="campaign__bg">
+    <div class="campaign__flag-bar">
+      <div class="fb black"></div>
+      <div class="fb red"></div>
+      <div class="fb gold"></div>
+    </div>
+  </div>
+  <div class="section__inner campaign__inner">
+    <div class="section__label light">
+      <div class="label-line light"></div>
+      Nation Branding Strategy
+    </div>
+    <h2 class="section__title light">The Campaign Architecture</h2>
+    <p class="section__lead light">
+      Modelled on the UK GREAT campaign — which delivered £1 return for every £1 spent at a 10.6× ratio —
+      Germany's nation branding strategy targets measurable FDI growth and B2B engagement.
+    </p>
+
+    <div class="campaign__pillars">
+      <div class="pillar">
+        <div class="pillar__num gold-text">01</div>
+        <h4>Investors</h4>
+        <p>LinkedIn, Bloomberg TV, CNN International, Airport DOOH. Reaching C-suite decision-makers where they consume business intelligence.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar__num red-text">02</div>
+        <h4>Trade Partners</h4>
+        <p>Hannover Messe, CES, trade delegations. The highest-conversion channel for B2B relationships — Germany already dominates; now we make it visible.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar__num gold-text">03</div>
+        <h4>Global Talent</h4>
+        <p>Instagram, TikTok, YouTube. Germany's innovation culture must be visible to the next generation of global researchers, engineers, and founders.</p>
+      </div>
+    </div>
+
+    <div class="kpi-row">
+      <div class="kpi"><span class="kpi-val">+20%</span><span class="kpi-label">Target FDI growth in 3 years</span></div>
+      <div class="kpi"><span class="kpi-val">≥€52B</span><span class="kpi-label">Annual FDI inflow target</span></div>
+      <div class="kpi"><span class="kpi-val">2B+</span><span class="kpi-label">Annual campaign impressions</span></div>
+      <div class="kpi"><span class="kpi-val">1:10</span><span class="kpi-label">Target ROI (GREAT benchmark)</span></div>
+    </div>
+
+    <!-- ── Poster Carousel ─────────────────────────────── -->
+    <div class="carousel-block">
+      <h3 class="carousel-block__title">Creative Samples — Print &amp; Airport DOOH</h3>
+      <p class="carousel-block__sub">Campaign formats for Airport DOOH (Channel 4) and print channels</p>
+
+      <div class="carousel" id="posterCarousel">
+        <button class="carousel__arrow carousel__arrow--prev" onclick="carouselPrev()" aria-label="Previous">&#8592;</button>
+        <div class="carousel__track-wrap">
+          <div class="carousel__track" id="carouselTrack">
+            <div class="carousel__slide">
+              <img src="images/poster-innovations-hydrogen.jpeg" alt="Innovations — Green Hydrogen" />
+            </div>
+            <div class="carousel__slide">
+              <img src="images/poster-traditions-carnival.jpeg" alt="Traditions — Cologne Carnival" />
+            </div>
+            <div class="carousel__slide">
+              <img src="images/poster-traditions-christmas.jpeg" alt="Traditions — Dresden Christmas Market" />
+            </div>
+            <div class="carousel__slide">
+              <img src="images/poster-automotives-mercedes.jpeg" alt="Automotives — Mercedes" />
+            </div>
+            <div class="carousel__slide">
+              <img src="images/poster-mockup-airport.jpeg" alt="Airport DOOH Mockup" />
+            </div>
+            <div class="carousel__slide">
+              <img src="images/poster-mockup-newspaper.jpeg" alt="Newspaper Print Mockup" />
+            </div>
+          </div>
+        </div>
+        <button class="carousel__arrow carousel__arrow--next" onclick="carouselNext()" aria-label="Next">&#8594;</button>
+      </div>
+
+      <div class="carousel__dots" id="carouselDots"></div>
+      <p class="carousel__caption">Airport DOOH and print executions — part of a 7-channel campaign reaching 2B+ annual impressions.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="flag-stripe">
+    <div class="stripe black"></div>
+    <div class="stripe red"></div>
+    <div class="stripe gold"></div>
+  </div>
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <img src="images/Adler_modern.png" class="footer-adler" alt="Bundesadler" />
+      <span class="footer__name">GERMANY NATION BRANDING CONCEPT</span>
+      <span class="footer__tagline">Where Innovation Becomes Industry</span>
+    </div>
+    <div class="footer__links">
+      <a href="index.html">Home</a>
+      <a href="index.html">Mission</a>
+      <a href="innovations.html">Innovations</a>
+      <a href="campaign.html">Campaign</a>
+      <a href="newsletter.html">Newsletter</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer__copy">
+      © 2026 Germany Nation Branding Concept · FOM University of Applied Sciences · MBA Programme<br/>
+      Produced for academic purposes. Sources: Handelsblatt, Deutsche Bundesbank, Santander Trade, GTAI.
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

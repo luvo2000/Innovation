@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Newsletter — Germany Innovation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+
+<!-- ═══════════════════════════════════════════════
+     NAVBAR
+════════════════════════════════════════════════ -->
+<header class="navbar" id="navbar">
+  <div class="navbar__inner">
+    <a href="index.html" class="navbar__logo">
+      <img src="images/Adler_modern.png" class="logo-bundesadler" alt="Bundesadler" />
+      <span class="logo-text">GERMANY<span class="logo-sub">Where Innovation Becomes Industry</span></span>
+    </a>
+
+    <nav class="navbar__links" id="navLinks">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="innovations.html" class="nav-link">Innovations</a>
+      <a href="campaign.html" class="nav-link">Campaign</a>
+      <a href="newsletter.html" class="nav-link active">Newsletter</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <!-- German flag stripe -->
+  <div class="flag-stripe">
+    <div class="stripe black"></div>
+    <div class="stripe red"></div>
+    <div class="stripe gold"></div>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════════════
+     NEWSLETTER
+════════════════════════════════════════════════ -->
+<section class="section newsletter-sec" id="newsletter">
+  <div class="section__inner">
+    <div class="section__label">
+      <div class="label-line"></div>
+      Monthly Newsletter
+    </div>
+    <h2 class="section__title">Germany Innovation Newsletter</h2>
+    <p class="section__lead">
+      Each month, one deep-tech story from Germany's innovation frontier — curated for
+      international investors, trade partners, and decision-makers. Free. Credible. Evidence-based.
+    </p>
+
+    <div class="issues-preview">
+      <div class="issue-card active-issue">
+        <div class="issue-card__vol">Vol. 1 — March 2026</div>
+        <div class="issue-card__tag energy-tag">⚡ Energy</div>
+        <h4>Drilling Into the Future</h4>
+        <p>How Hades Mining and Telura Energy are reinventing geothermal drilling — and why it could make clean baseload power accessible anywhere on earth.</p>
+        <div class="issue-card__companies">Hades Mining · Telura · Quaise Energy</div>
+        <a href="Germany_Innovation_Brief_Vol1_March2026.pdf" download class="btn-download">↓ Download PDF</a>
+      </div>
+      <div class="issue-card">
+        <div class="issue-card__vol">Vol. 2 — April 2026</div>
+        <div class="issue-card__tag ai-tag">🧠 AI</div>
+        <h4>The Quiet Frontier</h4>
+        <p>Germany's AI champions — Black Forest Labs, Aleph Alpha, Helsing — are building frontier models, sovereign infrastructure, and defence AI without Silicon Valley fanfare.</p>
+        <div class="issue-card__companies">Black Forest Labs · Aleph Alpha · Helsing</div>
+        <a href="Germany_Innovation_Brief_Vol2_April2026.pdf" download class="btn-download">↓ Download PDF</a>
+      </div>
+      <div class="issue-card upcoming">
+        <div class="issue-card__vol">Vol. 3 — May 2026</div>
+        <div class="issue-card__tag semicon-tag">💡 Semiconductors</div>
+        <h4>The Post-Silicon Future</h4>
+        <p>Dresden's graphene chip revolution. Black Semiconductor and TSMC's €10B European anchor investment — why Germany is positioned to lead the next chip cycle.</p>
+        <div class="issue-card__companies">Black Semiconductor · TSMC Dresden</div>
+        <div class="upcoming-badge">Coming Soon</div>
+      </div>
+    </div>
+
+    <div class="subscribe-box">
+      <h3>Subscribe — It's Free</h3>
+      <p>Join international investors, trade partners, and policy-makers following Germany's innovation story.</p>
+      <form class="subscribe-form" onsubmit="handleSubscribe(event)">
+        <input type="text" placeholder="Your name" class="form-input" required />
+        <input type="email" placeholder="Your email address" class="form-input" required />
+        <select class="form-input form-select">
+          <option value="">Your focus area...</option>
+          <option>Investor / VC</option>
+          <option>Corporate / M&A</option>
+          <option>Government / Policy</option>
+          <option>Research / Academia</option>
+          <option>Media / Press</option>
+          <option>Other</option>
+        </select>
+        <button type="submit" class="btn btn--gold btn--full">Subscribe to Germany Innovation Newsletter →</button>
+      </form>
+      <div class="subscribe-confirm" id="subscribeConfirm">
+        ✓ Thank you! Your first issue will arrive in your inbox shortly.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="flag-stripe">
+    <div class="stripe black"></div>
+    <div class="stripe red"></div>
+    <div class="stripe gold"></div>
+  </div>
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <img src="images/Adler_modern.png" class="footer-adler" alt="Bundesadler" />
+      <span class="footer__name">GERMANY NATION BRANDING CONCEPT</span>
+      <span class="footer__tagline">Where Innovation Becomes Industry</span>
+    </div>
+    <div class="footer__links">
+      <a href="index.html">Home</a>
+      <a href="index.html">Mission</a>
+      <a href="innovations.html">Innovations</a>
+      <a href="campaign.html">Campaign</a>
+      <a href="newsletter.html">Newsletter</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer__copy">
+      © 2026 Germany Nation Branding Concept · FOM University of Applied Sciences · MBA Programme<br/>
+      Produced for academic purposes. Sources: Handelsblatt, Deutsche Bundesbank, Santander Trade, GTAI.
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
