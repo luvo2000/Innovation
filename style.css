@@ -1055,7 +1055,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--ff-
 .one-dest__od {
   display: block;
   font-size: clamp(2rem, 5vw, 4.2rem);
-  color: #D4A017;
+  color: var(--white);
 }
 .one-dest__name {
   display: block;
