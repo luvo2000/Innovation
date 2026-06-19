@@ -7,6 +7,292 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* ── Destination tiles ── */
+    .dest-tiles {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      height: 420px;
+    }
+    .dest-tile {
+      position: relative;
+      overflow: hidden;
+      text-decoration: none;
+      display: block;
+    }
+    .dest-tile img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease, filter 0.3s ease;
+      filter: brightness(0.65);
+    }
+    .dest-tile:hover img {
+      transform: scale(1.04);
+      filter: brightness(0.5);
+    }
+    .dest-tile__overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 2rem 1.8rem;
+      background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 100%);
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+    .dest-tile__brand {
+      font-family: 'Inter', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      line-height: 1;
+    }
+    .dest-tile__ger {
+      color: #ffffff;
+      font-family: 'Inter', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+    }
+    .dest-tile__many {
+      color: #CC0000;
+      font-family: 'Inter', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+    }
+    .dest-tile__name {
+      display: block;
+      color: #D4A017;
+      font-family: 'Inter', sans-serif;
+      font-size: 1.55rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-top: 0.15rem;
+    }
+    .dest-tile__arrow {
+      display: inline-block;
+      color: rgba(255,255,255,0.5);
+      font-size: 0.85rem;
+      margin-top: 0.4rem;
+      transition: color 0.2s;
+    }
+    .dest-tile:hover .dest-tile__arrow {
+      color: #D4A017;
+    }
+
+    /* ── Stats strip ── */
+    .stat-strip {
+      background: #0a0a0a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+      padding: 2.5rem 2rem;
+    }
+    .stat-strip__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.3rem;
+      flex: 1;
+      max-width: 240px;
+    }
+    .stat-strip__divider {
+      width: 1px;
+      height: 48px;
+      background: rgba(255,255,255,0.12);
+      flex-shrink: 0;
+      margin: 0 2rem;
+    }
+    .ss-num {
+      font-family: 'Inter', sans-serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: #D4A017;
+      letter-spacing: -0.02em;
+    }
+    .ss-label {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.55);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      text-align: center;
+    }
+
+    /* ── Featured story ── */
+    .featured {
+      background: #f8f6f1;
+      padding: 5rem 2rem;
+    }
+    .featured__inner {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .featured__label {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #D4A017;
+      margin-bottom: 2.5rem;
+    }
+    .featured__label-line {
+      width: 32px;
+      height: 2px;
+      background: #D4A017;
+    }
+    .featured__card {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      background: #ffffff;
+      border: 1px solid #e8e4dc;
+      overflow: hidden;
+    }
+    .featured__card-img {
+      overflow: hidden;
+    }
+    .featured__card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .featured__card-body {
+      padding: 2.5rem 2.2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .featured__tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: #D4A017;
+      color: #0a0a0a;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.7rem;
+      border-radius: 2px;
+      width: fit-content;
+      margin-bottom: 1.2rem;
+    }
+    .featured__card-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.55rem;
+      font-weight: 700;
+      color: #0a0a0a;
+      line-height: 1.3;
+      margin-bottom: 0.9rem;
+    }
+    .featured__card-desc {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      color: #555;
+      line-height: 1.65;
+      margin-bottom: 1.8rem;
+    }
+    .featured__card-link {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #CC0000;
+      text-decoration: none;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .featured__card-link:hover {
+      color: #D4A017;
+    }
+
+    /* ── Newsletter CTA bar ── */
+    .nl-cta {
+      background: #D4A017;
+      padding: 3rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2.5rem;
+    }
+    .nl-cta__text {
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #0a0a0a;
+      letter-spacing: 0.01em;
+    }
+    .nl-cta__sub {
+      font-size: 0.8rem;
+      font-weight: 400;
+      opacity: 0.75;
+      display: block;
+      margin-top: 0.2rem;
+    }
+    .nl-cta__btn {
+      background: #0a0a0a;
+      color: #ffffff;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 0.85rem 2rem;
+      display: inline-block;
+      white-space: nowrap;
+      transition: background 0.2s;
+    }
+    .nl-cta__btn:hover {
+      background: #CC0000;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 768px) {
+      .dest-tiles {
+        grid-template-columns: 1fr;
+        height: auto;
+      }
+      .dest-tile {
+        height: 240px;
+      }
+      .stat-strip {
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+      .stat-strip__divider {
+        width: 40px;
+        height: 1px;
+        margin: 0;
+      }
+      .featured__card {
+        grid-template-columns: 1fr;
+      }
+      .featured__card-img {
+        height: 220px;
+      }
+      .nl-cta {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -21,7 +307,7 @@
       <span class="logo-text">GERMANY<span class="logo-sub">Where Innovation Becomes Industry</span></span>
     </a>
 
-        <nav class="navbar__links" id="navLinks">
+    <nav class="navbar__links" id="navLinks">
       <a href="index.html" class="nav-link active">Home</a>
       <div class="nav-dropdown">
         <a href="innovations.html" class="nav-link has-dropdown">Innovations <span class="nav-caret"></span></a>
@@ -51,7 +337,6 @@
       <span></span><span></span><span></span>
     </button>
   </div>
-  <!-- German flag stripe -->
   <div class="flag-stripe">
     <div class="stripe black"></div>
     <div class="stripe red"></div>
@@ -62,84 +347,31 @@
 <!-- ═══════════════════════════════════════════════
      HERO
 ════════════════════════════════════════════════ -->
-<section class="hero" id="home">
-  <!-- Real German flag photo background -->
+<section class="hero" id="home" style="min-height: 58vh">
   <div class="hero__flag-bg" aria-hidden="true">
     <img src="images/download.jpg" class="hero__flag-photo" alt="" />
     <div class="hfb-grid"></div>
   </div>
   <div class="hero__bg-text">GERMANY</div>
 
-  <div class="hero__content">
+  <div class="hero__content" style="max-width: 780px">
     <div class="hero__eyebrow">
       <span class="flag-dot black-dot"></span>
       <span class="flag-dot red-dot"></span>
       <span class="flag-dot gold-dot"></span>
       <span>Nation Branding · FDI · Deep Tech</span>
     </div>
-    <h1 class="hero__title">
+    <h1 class="hero__title" style="font-size: clamp(2.4rem, 5.5vw, 4.2rem); line-height: 1.1; margin-bottom: 1.5rem">
       Where Innovation<br/>
-      <em>Becomes Industry</em>
+      <em>Becomes Industry.</em>
     </h1>
-    <p class="hero__subtitle">
-      Germany leads the world in precision engineering, frontier AI, and clean-energy technology.
-      We tell that story to the investors, partners, and talent who need to hear it.
+    <p class="hero__subtitle" style="max-width: 560px; opacity: 0.85">
+      Investors. Trade partners. Global talent. One campaign. One destination.
     </p>
-    <div class="hero__stats">
-      <div class="stat-card">
-        <span class="stat-num">€1.54T</span>
-        <span class="stat-label">Goods exported annually (2024)</span>
-      </div>
-      <div class="stat-card">
-        <span class="stat-num">€1,034B</span>
-        <span class="stat-label">Inward FDI stock</span>
-      </div>
-      <div class="stat-card">
-        <span class="stat-num">Top 3</span>
-        <span class="stat-label">Global exporter rank</span>
-      </div>
-    </div>
-    <div class="hero__cta">
-      <a href="innovations.html" class="btn btn--gold">Explore Innovations</a>
-      <a href="newsletter.html" class="btn btn--outline">Subscribe Free</a>
-    </div>
   </div>
 
-  <div class="hero__eagle">
-    <img src="images/Bundesadler_Siegel.svg.png" alt="Bundesadler — Germany" class="eagle-img" />
-    <svg viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg" class="eagle-svg" aria-label="Bundesadler" style="display:none">
-      <g>
-        <!-- Body -->
-        <ellipse cx="100" cy="130" rx="26" ry="38" fill="currentColor"/>
-        <!-- Head -->
-        <circle cx="100" cy="75" r="22" fill="currentColor"/>
-        <!-- Beak right -->
-        <polygon points="100,62 128,74 100,86" fill="currentColor"/>
-        <!-- Eye -->
-        <circle cx="112" cy="69" r="5" fill="#0a0a0a"/>
-        <!-- Crown 3 peaks -->
-        <polygon points="83,53 87,40 91,53" fill="currentColor"/>
-        <polygon points="95,50 100,36 105,50" fill="currentColor"/>
-        <polygon points="109,53 113,40 117,53" fill="currentColor"/>
-        <!-- Left wing -->
-        <path d="M74,110 C60,92 20,82 5,55 C22,68 38,80 54,96 C38,74 30,46 36,20 C48,46 52,76 62,100 C54,66 58,32 72,16 C76,50 70,84 72,108 Z" fill="currentColor"/>
-        <!-- Right wing -->
-        <path d="M126,110 C140,92 180,82 195,55 C178,68 162,80 146,96 C162,74 170,46 164,20 C152,46 148,76 138,100 C146,66 142,32 128,16 C124,50 130,84 128,108 Z" fill="currentColor"/>
-        <!-- Tail fan -->
-        <path d="M78,165 C72,182 60,196 50,210 C66,196 82,186 100,180 C118,186 134,196 150,210 C140,196 128,182 122,165 Z" fill="currentColor"/>
-        <!-- Left talons -->
-        <line x1="80" y1="166" x2="62" y2="185" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
-        <line x1="80" y1="166" x2="70" y2="188" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
-        <line x1="80" y1="166" x2="78" y2="190" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
-        <!-- Right talons -->
-        <line x1="120" y1="166" x2="138" y2="185" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
-        <line x1="120" y1="166" x2="130" y2="188" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
-        <line x1="120" y1="166" x2="122" y2="190" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
-        <!-- Breast shield (red) -->
-        <rect x="88" y="118" width="24" height="30" rx="3" fill="#CC0000"/>
-        <line x1="100" y1="118" x2="100" y2="148" stroke="#D4A017" stroke-width="2.5"/>
-      </g>
-    </svg>
+  <div class="hero__eagle" style="opacity: 0.18">
+    <img src="images/Bundesadler_Siegel.svg.png" alt="Bundesadler" class="eagle-img" />
   </div>
 
   <div class="hero__scroll">
@@ -149,83 +381,100 @@
 </section>
 
 <!-- ═══════════════════════════════════════════════
-     MISSION — NATION BRANDING
+     EXPLORE GERMANY HEADING
 ════════════════════════════════════════════════ -->
-<section class="section mission" id="mission">
-  <div class="section__inner">
-    <div class="section__label">
-      <div class="label-line"></div>
-      The Strategic Case
-    </div>
-    <h2 class="section__title">The Visibility Gap</h2>
-    <p class="section__lead">
-      Germany consistently ranks among the world's top three merchandise exporters.
-      Yet its deep-tech innovation ecosystem remains systematically under-communicated
-      in international markets. We exist to close that gap.
-    </p>
+<div style="background:#111111; padding: 3rem 2rem 2.5rem; text-align: center;">
+  <div style="font-family:'Inter',sans-serif; font-size:0.7rem; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:#D4A017; margin-bottom:0.9rem;">
+    Choose your destination
+  </div>
+  <h2 style="font-family:'Inter',sans-serif; font-size:clamp(1.8rem,3.5vw,2.8rem); font-weight:800; letter-spacing:0.04em; text-transform:uppercase; margin:0; line-height:1;">
+    <span style="color:#ffffff;">Explore </span><span style="color:#CC0000;">GER</span><span style="color:#D4A017;">MANY</span>
+  </h2>
+</div>
 
-    <div class="mission__grid">
-      <div class="mission__card">
-        <div class="card-icon gold-icon">⚙️</div>
-        <h3>Industrial Heritage</h3>
-        <p>Centuries of engineering precision — from Gutenberg's press to today's Industry 4.0 — give Germany an unmatched manufacturing DNA that its startups inherit by default.</p>
+<!-- ═══════════════════════════════════════════════
+     THREE DESTINATION TILES
+════════════════════════════════════════════════ -->
+<div class="dest-tiles">
+  <a href="germany.html#innovations" class="dest-tile">
+    <img src="images/poster-innovations-hydrogen.jpeg" alt="GerMANY Innovations" />
+    <div class="dest-tile__overlay">
+      <span class="dest-tile__arrow">Explore &#8594;</span>
+    </div>
+  </a>
+  <a href="germany.html#traditions" class="dest-tile">
+    <img src="images/poster-traditions-carnival.jpeg" alt="GerMANY Traditions" />
+    <div class="dest-tile__overlay">
+      <span class="dest-tile__arrow">Explore &#8594;</span>
+    </div>
+  </a>
+  <a href="germany.html#automotives" class="dest-tile">
+    <img src="images/poster-automotives-mercedes.jpeg" alt="GerMANY Automotives" />
+    <div class="dest-tile__overlay">
+      <span class="dest-tile__arrow">Explore &#8594;</span>
+    </div>
+  </a>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     STATS STRIP
+════════════════════════════════════════════════ -->
+<div class="stat-strip">
+  <div class="stat-strip__item">
+    <span class="ss-num">€1.54T</span>
+    <span class="ss-label">Goods exported annually (2024)</span>
+  </div>
+  <div class="stat-strip__divider"></div>
+  <div class="stat-strip__item">
+    <span class="ss-num">Top 3</span>
+    <span class="ss-label">Global exporter rank</span>
+  </div>
+  <div class="stat-strip__divider"></div>
+  <div class="stat-strip__item">
+    <span class="ss-num">400+</span>
+    <span class="ss-label">World-class universities</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     FEATURED STORY
+════════════════════════════════════════════════ -->
+<section class="featured">
+  <div class="featured__inner">
+    <div class="featured__label">
+      <div class="featured__label-line"></div>
+      Latest from the Newsletter
+    </div>
+    <div class="featured__card">
+      <div class="featured__card-img">
+        <img src="images/hades-mining.jpg" alt="Hades Mining — Geothermal" />
       </div>
-      <div class="mission__card">
-        <div class="card-icon red-icon">🔬</div>
-        <h3>Research Depth</h3>
-        <p>The Max Planck Society, Fraunhofer Institutes, and Germany's 400+ universities produce more engineering PhDs per capita than any comparable economy. This is where frontier tech begins.</p>
-      </div>
-      <div class="mission__card">
-        <div class="card-icon black-icon">🌍</div>
-        <h3>Global Reach</h3>
-        <p>A €60M nation branding campaign deployed across LinkedIn, CNN International, Bloomberg TV, Airport DOOH, and global trade fairs — targeting investors, partners, and talent across 140+ markets.</p>
-      </div>
-      <div class="mission__card">
-        <div class="card-icon gold-icon">📈</div>
-        <h3>Measurable Impact</h3>
-        <p>Benchmarked against the UK GREAT campaign (ROI: £1:£10.6), our target is ≥20% FDI growth within three years — bringing annual inflows to ≥€52 billion.</p>
+      <div class="featured__card-body">
+        <div>
+          <div class="featured__tag">&#9889; Energy · Vol. 1</div>
+          <h3 class="featured__card-title">Drilling Into the Future: Germany's Geothermal Revolution</h3>
+          <p class="featured__card-desc">
+            Geothermal energy is CO2-free, always-on, and land-efficient. The barrier has always been cost.
+            Two German startups are changing that - Hades Mining and Telura Energy are rewriting the economics
+            of baseload power from the ground up.
+          </p>
+        </div>
+        <a href="newsletter.html" class="featured__card-link">Read the full issue &#8594;</a>
       </div>
     </div>
-
-    <!-- Positioning statement -->
-    <div class="positioning">
-      <div class="positioning__quote">
-        "The most trusted platform for industrial innovation and transformation."
-      </div>
-      <div class="positioning__label">Germany's Campaign Positioning</div>
-    </div>
-
   </div>
 </section>
 
-<!-- Page Navigation -->
-<section class="section page-nav-sec">
-  <div class="section__inner">
-    <div class="section__label"><div class="label-line"></div>Explore Further</div>
-    <div class="page-nav__grid">
-      <a href="innovations.html" class="page-nav__card">
-        <div class="page-nav__icon">&#128300;</div>
-        <div class="page-nav__title">Innovation Spotlights</div>
-        <div class="page-nav__desc">AI, Energy, Semiconductors, Quantum, Biomedical &amp; Photonics</div>
-      </a>
-      <a href="campaign.html" class="page-nav__card">
-        <div class="page-nav__icon">&#128202;</div>
-        <div class="page-nav__title">Campaign Architecture</div>
-        <div class="page-nav__desc">&#8364;60M media plan, channel strategy &amp; FDI targets</div>
-      </a>
-      <a href="newsletter.html" class="page-nav__card">
-        <div class="page-nav__icon">&#128240;</div>
-        <div class="page-nav__title">Newsletter</div>
-        <div class="page-nav__desc">Monthly deep-tech briefings &mdash; download or subscribe</div>
-      </a>
-      <a href="contact.html" class="page-nav__card">
-        <div class="page-nav__icon">&#9993;</div>
-        <div class="page-nav__title">Contact</div>
-        <div class="page-nav__desc">Press enquiries, partnerships &amp; academic documentation</div>
-      </a>
-    </div>
+<!-- ═══════════════════════════════════════════════
+     NEWSLETTER CTA BAR
+════════════════════════════════════════════════ -->
+<div class="nl-cta">
+  <div class="nl-cta__text">
+    Germany Innovation Newsletter
+    <span class="nl-cta__sub">Monthly deep-tech briefings for investors, partners and talent. Free.</span>
   </div>
-</section>
+  <a href="newsletter.html" class="nl-cta__btn">Subscribe Free &#8594;</a>
+</div>
 
 <!-- ═══════════════════════════════════════════════
      FOOTER
@@ -242,7 +491,7 @@
       <span class="footer__name">GERMANY NATION BRANDING CONCEPT</span>
       <span class="footer__tagline">Where Innovation Becomes Industry</span>
     </div>
-        <div class="footer__links">
+    <div class="footer__links">
       <a href="index.html">Home</a>
       <a href="innovations.html">Innovations</a>
       <a href="germany.html"><span class="brand-ger">GER</span><span class="brand-many">MANY</span></a>
@@ -251,7 +500,7 @@
       <a href="contact.html">Contact</a>
     </div>
     <div class="footer__copy">
-      © 2026 Germany Nation Branding Concept · FOM University of Applied Sciences · MBA Programme<br/>
+      &copy; 2026 Germany Nation Branding Concept &middot; FOM University of Applied Sciences &middot; MBA Programme<br/>
       Produced for academic purposes. Sources: Handelsblatt, Deutsche Bundesbank, Santander Trade, GTAI.
     </div>
   </div>
