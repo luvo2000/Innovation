@@ -1000,6 +1000,34 @@ button { cursor: pointer; border: none; background: none; font-family: var(--ff-
 /* Destination cards */
 .gm-card--destination { cursor: default; }
 .gm-card--destination:hover { transform: none; box-shadow: none; }
+
+/* ── Automotives stats block ─────────────────── */
+.gm-auto-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+@media (max-width: 900px) { .gm-auto-stats { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px) { .gm-auto-stats { grid-template-columns: 1fr; } }
+.gm-auto-stat {
+  border-top: 2px solid var(--gold);
+  padding-top: 1rem;
+  display: flex; flex-direction: column; gap: 0.4rem;
+}
+.gm-auto-stat__num {
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 900; color: var(--gold);
+  letter-spacing: -0.01em; line-height: 1;
+}
+.gm-auto-stat__label {
+  font-size: 0.8rem; color: rgba(255,255,255,0.55);
+  letter-spacing: 0.04em; text-transform: uppercase;
+}
+.gm-auto-tagline {
+  font-size: 1.05rem; font-style: italic;
+  color: rgba(255,255,255,0.7); margin-top: 0.5rem;
+}
 .gm-card__city {
   font-size: 1.5rem; font-weight: 800; color: var(--white);
   margin-bottom: 0.1rem;
