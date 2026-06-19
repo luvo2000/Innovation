@@ -1049,18 +1049,21 @@ button { cursor: pointer; border: none; background: none; font-family: var(--ff-
 .one-dest__headline {
   font-family: 'Helvetica Neue', Helvetica, Arial, system-ui, sans-serif;
   font-weight: 900; text-transform: uppercase;
-  letter-spacing: 0.1em; line-height: 1;
+  letter-spacing: 0.1em;
   margin-bottom: 1.2rem;
 }
 .one-dest__od {
   display: block;
   font-size: clamp(2rem, 5vw, 4.2rem);
   color: var(--white);
+  line-height: 1.15;
 }
 .one-dest__name {
   display: block;
   font-size: clamp(2rem, 5vw, 4.2rem);
   color: var(--white);
+  line-height: 1.15;
+  margin-top: 0.15em;
 }
 .one-dest__sub {
   font-size: 1rem; color: rgba(255,255,255,0.45);
