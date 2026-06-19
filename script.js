@@ -100,7 +100,7 @@ mobileMenu.querySelectorAll('a:not(.has-dropdown)').forEach(a => {
 // ═══════════════════════════════════════════════
 //  HASH → TAB (innovations.html#energy etc.)
 // ═══════════════════════════════════════════════
-(function activateTabFromHash() {
+function activateTabFromHash() {
   const hash = window.location.hash.slice(1);
   if (!hash) return;
   const btn = document.querySelector(`.tab-btn[data-tab="${hash}"]`);
@@ -114,7 +114,10 @@ mobileMenu.querySelectorAll('a:not(.has-dropdown)').forEach(a => {
     const navH = document.getElementById('navbar').offsetHeight;
     window.scrollTo({ top: content.offsetTop - navH - 20, behavior: 'smooth' });
   }, 100);
-})();
+}
+// Run on page load and whenever the hash changes (same-page navigation)
+activateTabFromHash();
+window.addEventListener('hashchange', activateTabFromHash);
 
 // ═══════════════════════════════════════════════
 //  TABS
