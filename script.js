@@ -112,7 +112,10 @@ function activateTabFromHash() {
   content.classList.add('active');
   setTimeout(() => {
     const navH = document.getElementById('navbar').offsetHeight;
-    window.scrollTo({ top: content.offsetTop - navH - 20, behavior: 'smooth' });
+    // Scroll to the section top (tab bar), not deep into the content
+    const section = document.getElementById('innovation') || btn.closest('section');
+    const target = section || content;
+    window.scrollTo({ top: target.offsetTop - navH - 12, behavior: 'smooth' });
   }, 100);
 }
 // Run on page load and whenever the hash changes (same-page navigation)
