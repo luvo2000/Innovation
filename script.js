@@ -57,6 +57,27 @@ window.addEventListener('scroll', () => {
 });
 
 // ═══════════════════════════════════════════════
+//  DROPDOWN — click-toggle for mobile
+// ═══════════════════════════════════════════════
+document.querySelectorAll('.nav-dropdown > a').forEach(trigger => {
+  trigger.addEventListener('click', e => {
+    // Only intercept on mobile (hamburger visible)
+    if (window.innerWidth > 900) return;
+    e.preventDefault();
+    const parent = trigger.parentElement;
+    parent.classList.toggle('open');
+  });
+});
+
+// Close dropdowns when clicking outside
+document.addEventListener('click', e => {
+  if (!e.target.closest('.nav-dropdown')) {
+    document.querySelectorAll('.nav-dropdown.open')
+      .forEach(d => d.classList.remove('open'));
+  }
+});
+
+// ═══════════════════════════════════════════════
 //  HAMBURGER MENU
 // ═══════════════════════════════════════════════
 const hamburger  = document.getElementById('hamburger');
@@ -67,13 +88,33 @@ hamburger.addEventListener('click', () => {
   mobileMenu.classList.toggle('open');
 });
 
-// Close on link click
-mobileMenu.querySelectorAll('a').forEach(a => {
+// Close on non-dropdown link click
+mobileMenu.querySelectorAll('a:not(.has-dropdown)').forEach(a => {
   a.addEventListener('click', () => {
     hamburger.classList.remove('open');
     mobileMenu.classList.remove('open');
+    document.querySelectorAll('.nav-dropdown').forEach(d => d.classList.remove('open'));
   });
 });
+
+// ═══════════════════════════════════════════════
+//  HASH → TAB (innovations.html#energy etc.)
+// ═══════════════════════════════════════════════
+(function activateTabFromHash() {
+  const hash = window.location.hash.slice(1);
+  if (!hash) return;
+  const btn = document.querySelector(`.tab-btn[data-tab="${hash}"]`);
+  const content = document.getElementById('tab-' + hash);
+  if (!btn || !content) return;
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+  btn.classList.add('active');
+  content.classList.add('active');
+  setTimeout(() => {
+    const navH = document.getElementById('navbar').offsetHeight;
+    window.scrollTo({ top: content.offsetTop - navH - 20, behavior: 'smooth' });
+  }, 100);
+})();
 
 // ═══════════════════════════════════════════════
 //  TABS

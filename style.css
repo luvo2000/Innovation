@@ -105,6 +105,38 @@ button { cursor: pointer; border: none; background: none; font-family: var(--ff-
 .nav-link:hover, .nav-link.active { color: var(--white); }
 .nav-link:hover::after, .nav-link.active::after { transform: scaleX(1); }
 
+/* ── Dropdown navigation ─────────────────────── */
+.nav-caret { font-size: 0.65em; opacity: 0.6; margin-left: 2px; }
+.nav-dropdown { position: relative; }
+.nav-dropdown__menu {
+  position: absolute;
+  top: calc(100% + 14px); left: 50%;
+  transform: translateX(-50%) translateY(-6px);
+  min-width: 210px;
+  background: rgba(10,10,10,0.98);
+  border: 1px solid rgba(212,160,23,0.18);
+  border-top: 2px solid var(--gold);
+  padding: 0.4rem 0;
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.18s ease, transform 0.18s ease;
+  z-index: 500;
+}
+.nav-dropdown:hover .nav-dropdown__menu,
+.nav-dropdown.open .nav-dropdown__menu {
+  opacity: 1; pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+.nav-dropdown__menu a {
+  display: block;
+  padding: 0.55rem 1.2rem;
+  font-size: 0.78rem; font-weight: 500;
+  letter-spacing: 0.06em; text-transform: none;
+  color: rgba(255,255,255,0.65);
+  transition: color 0.15s, background 0.15s;
+  white-space: nowrap;
+}
+.nav-dropdown__menu a:hover { color: var(--gold); background: rgba(212,160,23,0.05); }
+
 .hamburger { display: none; flex-direction: column; gap: 5px; padding: 8px; }
 .hamburger span { display: block; width: 24px; height: 2px; background: var(--white); transition: all 0.3s; }
 .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
@@ -857,4 +889,140 @@ button { cursor: pointer; border: none; background: none; font-family: var(--ff-
 }
 @media (max-width: 480px) {
   .page-nav__grid { grid-template-columns: 1fr; }
+}
+
+/* ═══════════════════════════════════════════════
+   GERMANY PAGE — gm-hero + gm-cards + gm-card
+════════════════════════════════════════════════ */
+.gm-section { scroll-margin-top: var(--nav-h); }
+
+.gm-hero {
+  position: relative;
+  min-height: 75vh;
+  display: flex; align-items: center;
+  background-size: cover; background-position: center;
+  padding: calc(var(--nav-h) + 3rem) var(--pad) 4rem;
+}
+.gm-hero__overlay {
+  position: absolute; inset: 0;
+  background: rgba(0,0,0,0.55);
+}
+.gm-hero__content {
+  position: relative; z-index: 2;
+  max-width: var(--max-w); margin: 0 auto; width: 100%;
+}
+.gm-hero__eyebrow {
+  font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase;
+  color: rgba(255,255,255,0.45); margin-bottom: 1.4rem;
+}
+.gm-hero__od {
+  font-family: 'Helvetica Neue', Helvetica, Arial, system-ui, sans-serif;
+  font-size: clamp(2.4rem, 6vw, 5rem);
+  font-weight: 900; letter-spacing: 0.1em; text-transform: uppercase;
+  color: #D4A017; line-height: 1; margin-bottom: 0.15em;
+}
+.gm-hero__variant {
+  font-family: 'Helvetica Neue', Helvetica, Arial, system-ui, sans-serif;
+  font-size: clamp(2.4rem, 6vw, 5rem);
+  font-weight: 900; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--white); line-height: 1; margin-bottom: 1.6rem;
+}
+.gm-hero__tagline {
+  font-size: clamp(0.95rem, 1.4vw, 1.15rem);
+  color: rgba(255,255,255,0.65); max-width: 520px;
+  line-height: 1.65; margin-bottom: 2.2rem;
+}
+
+.gm-cards { background: var(--black); padding: 4rem var(--pad) 5rem; }
+.gm-cards__inner { max-width: var(--max-w); margin: 0 auto; }
+.gm-cards__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.4rem;
+}
+
+.gm-card {
+  display: block; text-decoration: none; color: var(--white);
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.09);
+  border-top: 2px solid var(--gold);
+  padding: 2rem 1.8rem;
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+.gm-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 36px rgba(0,0,0,0.45);
+  border-color: var(--gold);
+}
+.gm-card__icon { font-size: 2rem; margin-bottom: 1rem; }
+.gm-card__title {
+  font-size: 1rem; font-weight: 700; color: var(--gold);
+  letter-spacing: 0.02em; margin-bottom: 0.4rem;
+}
+.gm-card__companies {
+  font-size: 0.74rem; color: rgba(255,255,255,0.35);
+  letter-spacing: 0.04em; margin-bottom: 1rem;
+}
+.gm-card__desc {
+  font-size: 0.87rem; color: rgba(255,255,255,0.6);
+  line-height: 1.65; margin-bottom: 1.4rem;
+}
+.gm-card__cta {
+  font-size: 0.78rem; font-weight: 600;
+  letter-spacing: 0.08em; text-transform: uppercase; color: var(--gold);
+}
+.gm-card:hover .gm-card__cta { color: var(--gold-lt); }
+
+/* Destination cards */
+.gm-card--destination { cursor: default; }
+.gm-card--destination:hover { transform: none; box-shadow: none; }
+.gm-card__city {
+  font-size: 1.5rem; font-weight: 800; color: var(--white);
+  margin-bottom: 0.1rem;
+}
+.gm-card__country {
+  font-size: 0.68rem; color: var(--gold); letter-spacing: 0.16em;
+  text-transform: uppercase; margin-bottom: 1rem;
+}
+
+/* ═══════════════════════════════════════════════
+   ONE DESTINATION — campaign page block
+════════════════════════════════════════════════ */
+.one-dest {
+  text-align: center;
+  padding: 4rem 0 3.5rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.one-dest__headline {
+  font-family: 'Helvetica Neue', Helvetica, Arial, system-ui, sans-serif;
+  font-weight: 900; text-transform: uppercase;
+  letter-spacing: 0.1em; line-height: 1;
+  margin-bottom: 1.2rem;
+}
+.one-dest__od {
+  display: block;
+  font-size: clamp(2rem, 5vw, 4.2rem);
+  color: #D4A017;
+}
+.one-dest__name {
+  display: block;
+  font-size: clamp(2rem, 5vw, 4.2rem);
+  color: var(--white);
+}
+.one-dest__sub {
+  font-size: 1rem; color: rgba(255,255,255,0.45);
+  letter-spacing: 0.06em; margin-bottom: 1.8rem;
+}
+.one-dest__labels {
+  display: flex; align-items: center; justify-content: center; gap: 1.2rem;
+  font-size: 0.8rem; font-weight: 700; letter-spacing: 0.18em;
+}
+.one-dest__label { color: var(--gold); transition: color 0.15s; }
+.one-dest__label:hover { color: var(--gold-lt); }
+.one-dest__dot { color: rgba(255,255,255,0.2); }
+
+@media (max-width: 768px) {
+  .gm-hero { min-height: 60vh; }
+  .gm-cards__grid { grid-template-columns: 1fr; }
 }
