@@ -106,26 +106,46 @@ button { cursor: pointer; border: none; background: none; font-family: var(--ff-
 .nav-link:hover::after, .nav-link.active::after { transform: scaleX(1); }
 
 /* ── Dropdown navigation ─────────────────────── */
-.nav-caret { font-size: 0.65em; opacity: 0.6; margin-left: 2px; }
+.nav-caret {
+  display: inline-block;
+  width: 0; height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid currentColor;
+  opacity: 0.55;
+  margin-left: 5px;
+  vertical-align: middle;
+  transition: transform 0.18s;
+}
 .nav-dropdown { position: relative; }
 .nav-dropdown__menu {
   position: absolute;
-  top: calc(100% + 14px); left: 50%;
-  transform: translateX(-50%) translateY(-6px);
+  /* top: 100% + padding-top bridges the gap so hover never breaks */
+  top: 100%; left: 50%;
+  transform: translateX(-50%) translateY(-4px);
   min-width: 210px;
   background: rgba(10,10,10,0.98);
   border: 1px solid rgba(212,160,23,0.18);
   border-top: 2px solid var(--gold);
   padding: 0.4rem 0;
+  margin-top: 12px;
   opacity: 0; pointer-events: none;
   transition: opacity 0.18s ease, transform 0.18s ease;
   z-index: 500;
+}
+/* Invisible bridge fills the gap between link and menu */
+.nav-dropdown__menu::before {
+  content: '';
+  position: absolute;
+  top: -14px; left: 0; right: 0;
+  height: 14px;
 }
 .nav-dropdown:hover .nav-dropdown__menu,
 .nav-dropdown.open .nav-dropdown__menu {
   opacity: 1; pointer-events: auto;
   transform: translateX(-50%) translateY(0);
 }
+.nav-dropdown:hover .nav-caret { transform: rotate(180deg); }
 .nav-dropdown__menu a {
   display: block;
   padding: 0.55rem 1.2rem;
