@@ -747,6 +747,10 @@ button { cursor: pointer; border: none; background: none; font-family: var(--ff-
 .footer__links a:hover { color: var(--gold); }
 .footer__copy { font-size: 0.72rem; color: rgba(255,255,255,0.25); line-height: 1.6; }
 
+/* ── GerMANY brand split (matches poster: GER=red, MANY=gold bg) ── */
+.brand-ger  { color: #CC0000 !important; }
+.brand-many { background: #D4A017 !important; color: #0A0A0A !important; padding: 0 2px; border-radius: 1px; }
+
 /* ═══════════════════════════════════════════════
    RESPONSIVE
 ════════════════════════════════════════════════ */
