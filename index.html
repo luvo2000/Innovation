@@ -12,7 +12,6 @@
     .dest-tiles {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      height: 420px;
     }
     .dest-tile {
       position: relative;
@@ -22,8 +21,7 @@
     }
     .dest-tile img {
       width: 100%;
-      height: 100%;
-      object-fit: cover;
+      height: auto;
       display: block;
       transition: transform 0.5s ease, filter 0.3s ease;
       filter: brightness(0.65);
