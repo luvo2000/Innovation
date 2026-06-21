@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GerMANY Education — Germany Innovation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════
+     NAVBAR
+════════════════════════════════════════════════ -->
+<header class="navbar" id="navbar">
+  <div class="navbar__inner">
+    <a href="index.html" class="navbar__logo">
+      <img src="images/Adler_modern.png" class="logo-bundesadler" alt="Bundesadler" />
+      <span class="logo-text">GERMANY<span class="logo-sub">Where Innovation Becomes Industry</span></span>
+    </a>
+
+    <nav class="navbar__links" id="navLinks">
+      <a href="index.html" class="nav-link">Home</a>
+      <div class="nav-dropdown">
+        <a href="innovations.html" class="nav-link has-dropdown">Innovations <span class="nav-caret"></span></a>
+        <div class="nav-dropdown__menu">
+          <a href="innovations.html#energy">Energy</a>
+          <a href="innovations.html#ai">Artificial Intelligence</a>
+          <a href="innovations.html#semicon">Semiconductors</a>
+          <a href="innovations.html#biotech">Biomedical</a>
+          <a href="innovations.html#quantum">Quantum</a>
+          <a href="innovations.html#photonics">Photonics</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <a href="germany.html" class="nav-link has-dropdown active"><span class="brand-ger">GER</span><span class="brand-many">MANY</span> <span class="nav-caret"></span></a>
+        <div class="nav-dropdown__menu">
+          <a href="germany.html#innovations"><span class="brand-ger">GER</span><span class="brand-many">MANY</span> Innovations</a>
+          <a href="germany.html#traditions"><span class="brand-ger">GER</span><span class="brand-many">MANY</span> Traditions</a>
+          <a href="education.html"><span class="brand-ger">GER</span><span class="brand-many">MANY</span> Education</a>
+          <a href="germany.html#landscapes"><span class="brand-ger">GER</span><span class="brand-many">MANY</span> Landscapes</a>
+          <a href="germany.html#automotives"><span class="brand-ger">GER</span><span class="brand-many">MANY</span> Automotives</a>
+        </div>
+      </div>
+      <a href="campaign.html" class="nav-link">Campaign</a>
+      <a href="newsletter.html" class="nav-link">Newsletter</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="flag-stripe">
+    <div class="stripe black"></div>
+    <div class="stripe red"></div>
+    <div class="stripe gold"></div>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════════════
+     EDUCATION CHAPTER
+════════════════════════════════════════════════ -->
+<section class="section innovations" id="education">
+  <div class="section__inner">
+    <div class="section__label">
+      <div class="label-line"></div>
+      <span class="brand-ger">GER</span><span class="brand-many">MANY</span> Education
+    </div>
+    <h2 class="section__title">Where Knowledge Has No Price Tag</h2>
+    <p class="section__lead">
+      420,000 international students. Tuition-free public universities. 76 Fraunhofer institutes. 84 Max Planck institutes.
+      Germany's education and research ecosystem is one of the world's great undervalued assets.
+    </p>
+
+    <!-- Tabs -->
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="universities">&#127979; Universities</button>
+      <button class="tab-btn" data-tab="research">&#128300; Research Networks</button>
+      <button class="tab-btn" data-tab="scholarships">&#127942; Scholarships</button>
+      <button class="tab-btn" data-tab="studentlife">&#127968; Student Life</button>
+    </div>
+
+    <!-- TAB: Universities -->
+    <div class="tab-content active" id="tab-universities">
+      <div class="spotlight-hero">
+        <div class="spotlight-badge">Global Talent Destination</div>
+        <h3>400+ Universities. Near-Zero Tuition. A Record 420,000 International Students.</h3>
+        <p class="spotlight-lead">
+          Germany's public university system is one of the few in the world where academic quality and
+          affordability are not in tension. EU students pay no tuition. Most non-EU students pay none either.
+        </p>
+      </div>
+
+      <div class="company-cards">
+        <div class="company-card featured">
+          <div class="company-card__header">
+            <div class="company-icon" style="background:#1a1a2e">&#127979;</div>
+            <div>
+              <h4>TU Munich (TUM)</h4>
+              <span class="company-city">Munich, Germany</span>
+            </div>
+            <div class="company-badge">QS World Top 30</div>
+          </div>
+          <p>Germany's highest-ranked university and a global leader in engineering, natural sciences, and life sciences. TUM has produced 18 Nobel laureates and partners directly with Fraunhofer, Airbus, BMW, and Siemens. Over 45% of students are international.</p>
+          <div class="company-milestones">
+            <div class="milestone"><span class="m-year">18</span><span class="m-text">Nobel Prize winners</span></div>
+            <div class="milestone"><span class="m-year">45%+</span><span class="m-text">International student share</span></div>
+          </div>
+          <blockquote class="company-quote">
+            "TUM is not a university that produces graduates. It produces founders."
+          </blockquote>
+        </div>
+
+        <div class="company-card">
+          <div class="company-card__header">
+            <div class="company-icon" style="background:#1a2e1a">&#127979;</div>
+            <div>
+              <h4>LMU Munich</h4>
+              <span class="company-city">Munich, Germany</span>
+            </div>
+            <div class="company-badge">QS World Top 60</div>
+          </div>
+          <p>One of Europe's most prestigious research universities, with particular strength in law, medicine, humanities, and natural sciences. LMU consistently ranks among the top universities for graduate employability in Europe.</p>
+        </div>
+
+        <div class="company-card">
+          <div class="company-card__header">
+            <div class="company-icon" style="background:#2e1a00">&#127979;</div>
+            <div>
+              <h4>Heidelberg University</h4>
+              <span class="company-city">Heidelberg, Germany</span>
+            </div>
+            <div class="company-badge">Germany's Oldest University</div>
+          </div>
+          <p>Founded in 1386, Heidelberg is Germany's oldest and one of Europe's most internationally recognised universities. Particularly strong in medicine, life sciences, and social sciences. A UNESCO heritage institution.</p>
+        </div>
+      </div>
+
+      <div class="data-strip">
+        <div class="data-item"><strong>400+</strong><span>Universities and higher education institutions</span></div>
+        <div class="data-item"><strong>&#8364;0</strong><span>Tuition for EU students at public universities</span></div>
+        <div class="data-item"><strong>420,000+</strong><span>International students enrolled (2025 record)</span></div>
+        <div class="data-item"><strong>6</strong><span>German universities in QS World Top 100</span></div>
+      </div>
+    </div>
+
+    <!-- TAB: Research Networks -->
+    <div class="tab-content" id="tab-research">
+      <div class="spotlight-hero">
+        <div class="spotlight-badge">Research Infrastructure</div>
+        <h3>76 Fraunhofer Institutes. 84 Max Planck Institutes. One Ecosystem.</h3>
+        <p class="spotlight-lead">
+          Germany's research network is not just academic infrastructure. It is industrial leverage.
+          Companies co-develop IP here that becomes global product.
+        </p>
+      </div>
+
+      <div class="company-cards">
+        <div class="company-card featured">
+          <div class="company-card__header">
+            <div class="company-icon" style="background:#1a1a2e">&#128300;</div>
+            <div>
+              <h4>Fraunhofer-Gesellschaft</h4>
+              <span class="company-city">76 institutes across Germany</span>
+            </div>
+            <div class="company-badge">Applied Research Leader</div>
+          </div>
+          <p>Europe's largest applied research organisation. Fraunhofer bridges academic discovery and industrial production — its institutes work directly with companies on contract research, from semiconductor fabrication to AI systems, solar energy, and biomedical devices. The MP3 standard was invented here.</p>
+          <div class="company-milestones">
+            <div class="milestone"><span class="m-year">76</span><span class="m-text">Research institutes</span></div>
+            <div class="milestone"><span class="m-year">32,000+</span><span class="m-text">Employees</span></div>
+          </div>
+          <blockquote class="company-quote">
+            "Fraunhofer does not produce papers. It produces patents that become products."
+          </blockquote>
+        </div>
+
+        <div class="company-card">
+          <div class="company-card__header">
+            <div class="company-icon" style="background:#1a2e1a">&#128300;</div>
+            <div>
+              <h4>Max Planck Society</h4>
+              <span class="company-city">84 institutes across Germany</span>
+            </div>
+            <div class="company-badge">Basic Research Excellence</div>
+          </div>
+          <p>Germany's premier basic research organisation and one of the world's most cited scientific institutions. Max Planck researchers have received 30+ Nobel Prizes. Covers physics, chemistry, biology, neuroscience, social sciences, and humanities.</p>
+          <div class="company-milestones">
+            <div class="milestone"><span class="m-year">30+</span><span class="m-text">Nobel Prizes</span></div>
+            <div class="milestone"><span class="m-year">84</span><span class="m-text">Research institutes</span></div>
+          </div>
+        </div>
+
+        <div class="company-card">
+          <div class="company-card__header">
+            <div class="company-icon" style="background:#2e1a1a">&#128300;</div>
+            <div>
+              <h4>Helmholtz Association</h4>
+              <span class="company-city">18 research centres</span>
+            </div>
+            <div class="company-badge">&#8364;5B Annual Budget</div>
+          </div>
+          <p>Germany's largest scientific organisation by budget. Helmholtz centres tackle large-scale research challenges in energy, earth and environment, aeronautics, health, and key technologies. Partners include DESY, GSI, and the German Cancer Research Center (DKFZ).</p>
+        </div>
+      </div>
+
+      <div class="data-strip">
+        <div class="data-item"><strong>76</strong><span>Fraunhofer institutes (applied research)</span></div>
+        <div class="data-item"><strong>84</strong><span>Max Planck institutes (basic research)</span></div>
+        <div class="data-item"><strong>3.17%</strong><span>German GDP invested in R&amp;D (2024)</span></div>
+        <div class="data-item"><strong>Top 4</strong><span>Global R&amp;D spender (absolute terms)</span></div>
+      </div>
+    </div>
+
+    <!-- TAB: Scholarships -->
+    <div class="tab-content" id="tab-scholarships">
+      <div class="spotlight-hero">
+        <div class="spotlight-badge">Funding Your Studies</div>
+        <h3>DAAD, Erasmus, and the Most Accessible Public University System in the World</h3>
+        <p class="spotlight-lead">
+          Even where tuition applies, Germany offers more scholarship pathways per student than
+          almost any other destination. The DAAD alone funds over 140,000 scholars annually.
+        </p>
+      </div>
+
+      <div class="company-cards">
+        <div class="company-card featured">
+          <div class="company-card__header">
+            <div class="company-icon" style="background:#1a2e1a">&#127942;</div>
+            <div>
+              <h4>DAAD — German Academic Exchange Service</h4>
+              <span class="company-city">Germany</span>
+            </div>
+            <div class="company-badge">140,000+ Scholars/Year</div>
+          </div>
+          <p>The world's largest funding organisation for international academic exchange. DAAD offers scholarships for all academic levels — from undergraduate study abroad grants to postdoctoral research fellowships — across 140+ countries. Its doctoral programmes provide full funding for 4-year PhD research at German institutions.</p>
+          <div class="company-milestones">
+            <div class="milestone"><span class="m-year">140,000+</span><span class="m-text">Scholars funded annually</span></div>
+            <div class="milestone"><span class="m-year">140+</span><span class="m-text">Countries of origin represented</span></div>
+          </div>
+        </div>
+
+        <div class="company-card">
+          <div class="company-card__header">
+            <div class="company-icon" style="background:#1a1a2e">&#127942;</div>
+            <div>
+              <h4>Deutschlandstipendium</h4>
+              <span class="company-city">Federal Programme</span>
+            </div>
+            <div class="company-badge">&#8364;300/month</div>
+          </div>
+          <p>Germany's national merit scholarship, co-funded 50/50 by private companies and the federal government. Available to all enrolled students regardless of nationality. Over 28,000 scholarships awarded annually across all subject areas.</p>
+        </div>
+
+        <div class="company-card">
+          <div class="company-card__header">
+            <div class="company-icon" style="background:#2e1a00">&#127942;</div>
+            <div>
+              <h4>Erasmus+ (EU Programme)</h4>
+              <span class="company-city">EU-wide</span>
+            </div>
+            <div class="company-badge">EU Funded</div>
+          </div>
+          <p>EU students studying in Germany can combine tuition-free access with Erasmus+ mobility grants covering travel, accommodation, and living costs. Germany receives more Erasmus+ incoming students than any other EU country.</p>
+        </div>
+      </div>
+
+      <div class="data-strip">
+        <div class="data-item"><strong>&#8364;0–&#8364;1,500</strong><span>Tuition per semester depending on state and origin</span></div>
+        <div class="data-item"><strong>&#8364;150–350</strong><span>Semester administration fee (all students)</span></div>
+        <div class="data-item"><strong>&#8364;850–1,200</strong><span>Average monthly living costs</span></div>
+        <div class="data-item"><strong>18 months</strong><span>Post-study job seeker visa for graduates</span></div>
+      </div>
+    </div>
+
+    <!-- TAB: Student Life -->
+    <div class="tab-content" id="tab-studentlife">
+      <div class="spotlight-hero">
+        <div class="spotlight-badge">Life in Germany</div>
+        <h3>Study in Cities That Work as Hard as You Do</h3>
+        <p class="spotlight-lead">
+          Germany's university cities combine affordable living, excellent public transport,
+          rich cultural scenes, and direct access to Europe's largest job market.
+        </p>
+      </div>
+
+      <div class="company-cards">
+        <div class="company-card featured">
+          <div class="company-card__header">
+            <div class="company-icon" style="background:#1a1a2e">&#127961;</div>
+            <div>
+              <h4>Munich</h4>
+              <span class="company-city">Bavaria, Germany</span>
+            </div>
+            <div class="company-badge">Europe's Tech Capital</div>
+          </div>
+          <p>Home to TU Munich and LMU, and headquarters to BMW, Siemens, MAN, and Allianz. Munich combines world-class academia with direct access to Germany's most concentrated employer base. Consistently ranked among Europe's top student cities. LabCampus at Munich Airport is a flagship research-industry hub open to students and researchers.</p>
+          <div class="company-milestones">
+            <div class="milestone"><span class="m-year">2</span><span class="m-text">QS Top-100 universities</span></div>
+            <div class="milestone"><span class="m-year">7,500+</span><span class="m-text">Tech startups in the city</span></div>
+          </div>
+        </div>
+
+        <div class="company-card">
+          <div class="company-card__header">
+            <div class="company-icon" style="background:#1a2e1a">&#127961;</div>
+            <div>
+              <h4>Berlin</h4>
+              <span class="company-city">Germany</span>
+            </div>
+            <div class="company-badge">Startup Capital of Europe</div>
+          </div>
+          <p>Europe's most international city and home to Humboldt University, Freie Universität, TU Berlin, and Charité — one of Europe's largest university hospitals. Berlin's startup scene (Zalando, N26, Delivery Hero) offers unmatched internship and career opportunities.</p>
+        </div>
+
+        <div class="company-card">
+          <div class="company-card__header">
+            <div class="company-icon" style="background:#2e1a1a">&#127961;</div>
+            <div>
+              <h4>Heidelberg</h4>
+              <span class="company-city">Baden-Württemberg, Germany</span>
+            </div>
+            <div class="company-badge">Classic University Town</div>
+          </div>
+          <p>Germany's original university city and one of Europe's most beautiful. Heidelberg combines a UNESCO-recognised old town, a 14th-century castle, and one of the continent's most cited research universities — all within 80 minutes of Frankfurt.</p>
+        </div>
+      </div>
+
+      <div class="data-strip">
+        <div class="data-item"><strong>#1</strong><span>India now largest source of international students in Germany</span></div>
+        <div class="data-item"><strong>+6%</strong><span>International student growth year-on-year (2025)</span></div>
+        <div class="data-item"><strong>18 mo.</strong><span>Post-study job seeker visa — find work after graduation</span></div>
+        <div class="data-item"><strong>€20.7B</strong><span>German AI market by 2030 — the job market you graduate into</span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="flag-stripe">
+    <div class="stripe black"></div>
+    <div class="stripe red"></div>
+    <div class="stripe gold"></div>
+  </div>
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <img src="images/Adler_modern.png" class="footer-adler" alt="Bundesadler" />
+      <span class="footer__name">GERMANY NATION BRANDING CONCEPT</span>
+      <span class="footer__tagline">Where Innovation Becomes Industry</span>
+    </div>
+    <div class="footer__links">
+      <a href="index.html">Home</a>
+      <a href="innovations.html">Innovations</a>
+      <a href="germany.html"><span class="brand-ger">GER</span><span class="brand-many">MANY</span></a>
+      <a href="campaign.html">Campaign</a>
+      <a href="newsletter.html">Newsletter</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer__copy">
+      &copy; 2026 Germany Nation Branding Concept &middot; FOM University of Applied Sciences &middot; MBA Programme<br/>
+      Produced for academic purposes. Sources: DAAD, Destatis, QS World University Rankings, Fraunhofer-Gesellschaft.
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
