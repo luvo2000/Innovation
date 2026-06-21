@@ -77,11 +77,12 @@ button { cursor: pointer; border: none; background: none; font-family: var(--ff-
   box-shadow: 0 0 0 2px var(--gold), 0 4px 20px rgba(212,160,23,0.4);
 }
 .logo-text {
-  font-size: 1.1rem; letter-spacing: 0.14em; color: var(--red);
+  font-size: 1.1rem; letter-spacing: 0.14em; color: var(--white);
   text-transform: uppercase;
   border-left: 2px solid rgba(212,160,23,0.4);
   padding-left: 0.75rem;
 }
+.logo-many { color: var(--gold); }
 .logo-sub {
   color: var(--gold); font-weight: 400; font-size: 0.72rem;
   display: block; letter-spacing: 0.06em;
